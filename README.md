@@ -2,15 +2,33 @@
 
 Macropad USB-C com **9 teclas em 3 × 3**, biometria, controle de áudio e gravação de reuniões. A linha escolhida para desenvolvimento é a **Beta**, com acabamento em aparência de fibra de carbono e faixa RGB configurável exclusivamente na base.
 
-![CorePad Beta Carbon — perspectiva geral](beta_blender/Beta_v1.0.0_frente_esquerda.png)
+![CorePad Beta Carbon 1.0.1 — render refinado](beta_blender/Beta_v1.0.1_RGB_verde.png)
+
+## RGB — cinco cores
+
+Galeria da [Beta 1.0.1](beta_blender/Beta_v1.0.1.blend), renderizada em 2000 × 1700 pixels com a mesma câmera e iluminação. A revisão refina a trama twill 2 × 2 de carbono, filamentos, resina, microtexturas e reflexos, e acrescenta um anteparo interno à faixa RGB.
+
+| Laranja | Amarelo |
+|---|---|
+| ![RGB laranja](beta_blender/Beta_v1.0.1_RGB_laranja.png) | ![RGB amarelo](beta_blender/Beta_v1.0.1_RGB_amarelo.png) |
+| Cor de referência sRGB `#FF6A00`. | Cor de referência sRGB `#FFD500`. |
+
+| Verde | Vermelho |
+|---|---|
+| ![RGB verde](beta_blender/Beta_v1.0.1_RGB_verde.png) | ![RGB vermelho](beta_blender/Beta_v1.0.1_RGB_vermelho.png) |
+| Cor de referência sRGB `#00FF00`. | Cor de referência sRGB `#FF1200`. |
+
+**Azul — referência sRGB `#0066FF`**
+
+![RGB azul](beta_blender/Beta_v1.0.1_RGB_azul.png)
 
 ## Produto: vistas técnicas
 
-As vistas vêm do modelo editável [Beta 1.0.0](beta_blender/Beta_v1.0.0.blend). Elas mostram a organização visual escolhida; o empilhamento interno ainda está em desenvolvimento.
+As vistas de topo, lateral e traseira preservam a documentação geométrica da [Beta 1.0.0](beta_blender/Beta_v1.0.0.blend); o detalhe dos controles usa os materiais refinados da [Beta 1.0.1](beta_blender/Beta_v1.0.1.blend). Elas mostram a organização visual escolhida; o empilhamento interno ainda está em desenvolvimento.
 
 | Vista superior | Controles e biometria |
 |---|---|
-| ![Matriz 3 × 3 e organização superior](beta_blender/Beta_v1.0.0_vista_superior.png) | ![Detalhe do fader, chave e sensor](beta_blender/Beta_v1.0.0_detalhe_controles.png) |
+| ![Matriz 3 × 3 e organização superior](beta_blender/Beta_v1.0.0_vista_superior.png) | ![Detalhe refinado do fader, chave e sensor](beta_blender/Beta_v1.0.1_detalhe_controles.png) |
 | Nove teclas sem inscrições, seletor, três indicadores e botão de gravação. | Fader vertical e mudo à direita, com sensor biométrico acessível. |
 
 | Lateral esquerda | Traseira |
@@ -18,10 +36,11 @@ As vistas vêm do modelo editável [Beta 1.0.0](beta_blender/Beta_v1.0.0.blend).
 | ![Saída P2 e slot microSD](beta_blender/Beta_v1.0.0_lateral_microSD_P2.png) | ![Conector USB-C traseiro](beta_blender/Beta_v1.0.0_traseira_USB-C.png) |
 | P2 e microSD na lateral esquerda. | USB-C exclusivamente na borda traseira. |
 
-| RGB na base — verde | RGB na base — azul |
-|---|---|
-| ![Faixa RGB inferior verde](beta_blender/Beta_v1.0.0_faixa_RGB_base.png) | ![Faixa RGB inferior azul](beta_blender/Beta_v1.0.0_faixa_RGB_azul.png) |
-| Luz difusa junto à mesa, sem linha verde superior. | A cena demonstra a variação de cor pretendida para o software. |
+**Detalhe da base — Beta 1.0.1**
+
+![Faixa RGB inferior com materiais refinados](beta_blender/Beta_v1.0.1_faixa_RGB_base.png)
+
+Luz difusa junto à mesa, com anteparo interno e sem linha verde superior.
 
 ## PCB: estado atual dos arquivos KiCad
 

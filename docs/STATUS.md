@@ -4,6 +4,8 @@ Atualizado em 22/11/2026.
 
 Repositório organizado em torno da Beta carbon. A linha Alpha, conceitos descartados e geradores duplicados foram movidos para `.old/`. O relatório de arquitetura ainda útil foi preservado no pacote eletrônico ativo. O README contém vistas do produto, renders KiCad e vistas das peças plásticas, com suas fontes e limitações de estágio.
 
+A revisão visual 1.0.1 refina a trama de carbono, resina, texturas e luz de estúdio. A galeria compara RGB laranja, amarelo, verde, vermelho e azul na mesma câmera, em 2000 × 1700 pixels. A 1.0.0 permanece como fonte das vistas geométricas anteriores.
+
 ## Resumo executivo
 
 O CorePad concluiu a fase de definição visual conceitual e iniciou a exploração eletrônica. A Beta 1.0.0 é a proposta visual atual: carcaça e tampa em estilo fibra de carbono, nenhuma linha verde superior e faixa RGB configurável somente na base. A linha Alpha permanece preservada como histórico. A revisão eletrônica 0.1.0 organiza arquitetura, candidatos de componentes, orçamento de energia, estudos de posicionamento e plano de validação, mas ainda não existe uma placa funcional ou fabricável.
@@ -13,7 +15,7 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 | Área | Baseline | Situação |
 |---|---|---|
 | Produto | Especificação 0.7 | Vigente; contém decisões e pendências explícitas |
-| Visual/mecânica | Beta 1.0.0 | Carbono e RGB modelados; material, difusor e fabricação não validados |
+| Visual/mecânica | Beta 1.0.1 | Carbono refinado e RGB em cinco cores; material, difusor e fabricação não validados |
 | Eletrônica | 0.2.0 em development/ | Interface de bancada com esquema/redes; principal ainda sem esquema completo ou trilhas |
 | Firmware | Núcleo C11 inicial | Estados testados; drivers, USB, áudio e segurança pendentes |
 | Aplicativo/configuração | Configurador desktop inicial | Editor JSON e simulador; transporte USB pendente |

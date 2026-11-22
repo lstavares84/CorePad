@@ -4,7 +4,9 @@ As imagens correspondem aos modelos versionados. Nenhum componente eletrônico a
 
 ## Produto Beta
 
-Fonte: `beta_blender/Beta_v1.0.0.blend`. Os sete renders já entregues são reutilizados diretamente pelo README. O gerador está em `beta_blender/Beta_v1.0.0.py` e recusa sobrescrever uma revisão entregue; para mudar o design, criar a próxima versão.
+Fontes: `beta_blender/Beta_v1.0.1.blend` para a galeria RGB e detalhe de materiais; `Beta_v1.0.0.blend` para as vistas técnicas de topo/lateral/traseira. A revisão 1.0.1 tem trama twill procedural em escala física, Cycles com 256 amostras e resolução 2000 × 1700. A paleta é convertida de sRGB para linear.
+
+O gerador ativo é `beta_blender/Beta_v1.0.1.py` e recusa sobrescrever uma revisão entregue. Prévia: `blender -b --python beta_blender/Beta_v1.0.1.py -- --preview`. Para mudar o design, criar a próxima versão.
 
 ## Placas
 

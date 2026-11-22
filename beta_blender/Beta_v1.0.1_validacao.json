@@ -1,0 +1,40 @@
+{
+  "design": "Beta",
+  "versao": "1.0.1",
+  "teclas_macro": 9,
+  "filete_verde_superior": false,
+  "faixa_rgb": {
+    "galeria_srgb": {
+      "laranja": "#ff6a00",
+      "amarelo": "#ffd500",
+      "verde": "#00ff00",
+      "vermelho": "#ff1200",
+      "azul": "#0066ff"
+    },
+    "controles_cena": [
+      "Faixa_RGB_cor",
+      "Faixa_RGB_brilho",
+      "Faixa_RGB_ligada"
+    ]
+  },
+  "render": {
+    "samples": 256,
+    "resolution": [
+      2000,
+      1700
+    ],
+    "weave": "2x2 twill, 0.85 mm",
+    "color_management": "AgX"
+  },
+  "arquivos_renderizados": [
+    "Beta_v1.0.1_RGB_laranja.png",
+    "Beta_v1.0.1_RGB_amarelo.png",
+    "Beta_v1.0.1_RGB_verde.png",
+    "Beta_v1.0.1_RGB_vermelho.png",
+    "Beta_v1.0.1_RGB_azul.png",
+    "Beta_v1.0.1_detalhe_controles.png",
+    "Beta_v1.0.1_faixa_RGB_base.png"
+  ],
+  "eletronica_implementada": false,
+  "consumo_validado": false
+}

@@ -5,7 +5,7 @@ A linha escolhida pelo proprietário é a **Beta em aparência de fibra de carbo
 ## Ordem de leitura e autoridade
 
 1. `Especificacao_Produto_Macropad_Biometrico_Gravador_2026-11-21.md`: decisões expressas do proprietário e pendências.
-2. `beta_blender/LEIA-ME.md` e `Beta_v1.0.0.blend`: linguagem visual escolhida.
+2. `beta_blender/LEIA-ME.md` e `Beta_v1.0.1.blend`: linguagem visual escolhida, materiais refinados e galeria RGB; a 1.0.0 preserva vistas técnicas de geometria.
 3. `development/README.md`, `development/VALIDATION.md` e `docs/STATUS.md`: implementação e verificações atuais.
 4. `development/hardware/v0.2.0/`: esquema de interface, PCB, BOM e `ARCHITECTURE_REFERENCE.md` com a proposta técnica herdada.
 5. `development/mechanical/v0.1.0/`: peças de prototipagem, cuja espessura exploratória difere do modelo visual.
