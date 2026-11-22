@@ -34,7 +34,7 @@ Na face superior, o potenciômetro vertical e a chave mecânica de mudo ficam se
 
 Em 22/11/2026, o usuário aprovou acrescentar uma **faixa de LED RGB no perímetro inferior da base**, inspirada na iluminação inferior do mouse apresentado como referência. A luz deve sair de forma contínua e difusa junto à mesa, destacando o contorno inferior sem iluminar a parte de baixo das teclas. A **cor deve ser escolhida pelo usuário no software de configuração** e a preferência deve ser aplicada sem recompilar o firmware. Essa faixa é independente dos três LEDs de camada e do indicador dedicado de gravação: não substituir nem tornar ambíguos esses estados funcionais.
 
-A Alpha 1.2.0 e a eletrônica 0.1.0 são anteriores a essa decisão e não a implementam. A próxima revisão visual deve ser a Alpha 1.3.0. O tipo de LED, quantidade de zonas, difusor, brilho, efeitos, comportamento ao iniciar, retenção da preferência e política durante uso por bateria ainda precisam ser definidos. O circuito e o firmware devem permitir desligar a faixa; seu consumo deve ser medido separadamente e não pode ser incluído silenciosamente no orçamento anterior de 150 mW para gravação autônoma.
+A Alpha 1.2.0 e a eletrônica 0.1.0 são anteriores a essa decisão. A Alpha 1.3.0 passou a representar visualmente a faixa, mas não valida o difusor físico, o circuito ou o software. O tipo de LED, quantidade de zonas, difusor, brilho, efeitos, comportamento ao iniciar, retenção da preferência e política durante uso por bateria ainda precisam ser definidos. O circuito e o firmware devem permitir desligar a faixa; seu consumo deve ser medido separadamente e não pode ser incluído silenciosamente no orçamento anterior de 150 mW para gravação autônoma.
 
 ## Critérios para a próxima proposta visual
 
@@ -74,3 +74,7 @@ Ao definir alimentação, o usuário pediu ambos: USB-C e bateria interna com au
 A revisão eletrônica 0.1.0 propõe STM32U5A5, conversor TAC5112, dois microfones analógicos, amplificador de fone independente do mudo, componente criptográfico, microSD e circuito de carga. Uma bateria de 2.000 mAh é referência de dimensionamento, não seleção final nem garantia de autonomia. A proposta inicial usa duas placas e permite rever a espessura. Esses componentes e soluções são escolhas técnicas preliminares do assistente, não decisões adicionais expressas pelo usuário.
 
 Os arquivos de desenvolvimento ficam em `alpha_eletronica/v0.1.0/`. A numeração eletrônica é independente do Blender. O estudo de posicionamento KiCad não contém circuito roteado e não está liberado para fabricação. Biometria segura, implementação FIDO2, pinagem, orçamento de energia medido, lista completa de passivos e encaixe tridimensional permanecem sujeitos a desenvolvimento e validação. O indicador dedicado de gravação e a atribuição do deslizante ao volume local do P2 são propostas técnicas desta revisão, ainda não mudanças visuais aprovadas.
+
+## Implementação visual Alpha 1.3.0
+
+Em 22/11/2026, a faixa RGB foi incorporada ao modelo Blender em uma nova revisão, preservando a 1.2.0. O difusor acompanha o perímetro inferior da base, fica acima dos pés e abaixo dos conectores, e projeta luz sobre a mesa. A cena permite variar cor, brilho e estado ligado/desligado e inclui vistas verde e azul para comprovar a variação visual. A eletrônica, o consumo e o software continuam pendentes.

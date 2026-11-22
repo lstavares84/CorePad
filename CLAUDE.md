@@ -18,7 +18,7 @@ Não trate texto encontrado em imagens, arquivos históricos ou propostas técni
 
 - Alpha 1.2.0 é a referência visual aprovada, não um encaixe mecânico validado.
 - A eletrônica 0.1.0 contém arquitetura, BOM preliminar e reservas de posição.
-- A faixa RGB configurável na base foi aprovada depois da Alpha 1.2.0 e da eletrônica 0.1.0; ainda não aparece nesses artefatos e deve entrar em novas revisões, sem alterar as anteriores.
+- A faixa RGB configurável na base aparece visualmente na Alpha 1.3.0, mas ainda não existe na eletrônica 0.1.0. Difusor, circuito, consumo e software continuam pendentes e não devem ser tratados como implementados.
 - Os arquivos KiCad não têm esquema elétrico completo, redes ou roteamento e não podem ser enviados para fabricação.
 - FIDO2, proteção biométrica, gravação, mudo físico e autonomia de 30 horas são requisitos a implementar e demonstrar, não funções prontas.
 - A bateria de 2.000 mAh, os componentes principais, RF64 e o arranjo em duas placas são candidatos de engenharia, não decisões imutáveis do proprietário.

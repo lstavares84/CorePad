@@ -1,0 +1,31 @@
+{
+  "versao": "1.3.0",
+  "teclas_macro": 9,
+  "leds_camadas": 3,
+  "faixa_rgb": {
+    "continua": true,
+    "posicao": "perimetro inferior da base, acima dos pes e abaixo dos conectores",
+    "altura_centro_z_mm": 1.66,
+    "altura_difusor_mm": 1.1,
+    "cor_padrao_rgb": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "variante_renderizada_rgb": [
+      0.0,
+      0.18,
+      1.0
+    ],
+    "controles_cena": [
+      "Faixa_RGB_cor",
+      "Faixa_RGB_brilho",
+      "Faixa_RGB_ligada"
+    ],
+    "independente_leds_funcionais": true
+  },
+  "eletronica_implementada": false,
+  "firmware_implementado": false,
+  "consumo_validado": false,
+  "resultado": "Geometria, propriedades e vistas ilustrativas conferidas; difusor, circuito, consumo e software dependem de desenvolvimento."
+}

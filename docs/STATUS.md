@@ -4,14 +4,14 @@ Atualizado em 22/11/2026.
 
 ## Resumo executivo
 
-O CorePad concluiu a fase de definição visual conceitual e iniciou a exploração eletrônica. A Alpha 1.2.0 é a referência visual aprovada. A revisão eletrônica 0.1.0 organiza arquitetura, candidatos de componentes, orçamento de energia, estudos de posicionamento e plano de validação, mas ainda não existe uma placa funcional ou fabricável.
+O CorePad concluiu a fase de definição visual conceitual e iniciou a exploração eletrônica. A Alpha 1.2.0 é a baseline aprovada; a Alpha 1.3.0 é a proposta visual atual, incorporando a faixa RGB inferior solicitada. A revisão eletrônica 0.1.0 organiza arquitetura, candidatos de componentes, orçamento de energia, estudos de posicionamento e plano de validação, mas ainda não existe uma placa funcional ou fabricável.
 
 ## Baselines vigentes
 
 | Área | Baseline | Situação |
 |---|---|---|
 | Produto | Especificação 0.6 | Vigente; contém decisões e pendências explícitas |
-| Visual/mecânica | Alpha 1.2.0 | Baseline aprovada; faixa RGB posterior ainda não modelada |
+| Visual/mecânica | Alpha 1.3.0 | Faixa RGB modelada; difusor e fabricação ainda não validados |
 | Eletrônica | 0.1.0 | Estudo preliminar; sem esquema completo ou trilhas |
 | Firmware | — | Não iniciado |
 | Aplicativo/configuração | — | Não iniciado |
@@ -20,7 +20,7 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 ## O que já existe
 
 - nove teclas 3 × 3, seletor de camadas, três LEDs, botão de gravação, biometria e controles representados no Blender;
-- decisão posterior de acrescentar faixa RGB difusa no perímetro inferior, com cor configurável pelo software;
+- Alpha 1.3.0 com faixa RGB difusa no perímetro inferior, propriedades de cor/brilho/liga-desliga e vistas verde/azul;
 - vistas de revisão, geradores Python e validações JSON;
 - proposta de arquitetura com STM32U5A5, áudio dedicado, microSD, elemento seguro, bateria e carga;
 - BOM preliminar, estimativa de autonomia, interligações funcionais e reservas de posicionamento KiCad;
@@ -32,7 +32,7 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 - pinagem simultânea comprovada para todos os periféricos;
 - placa roteada, ERC/DRC de produção ou Gerbers;
 - firmware de teclado, áudio, armazenamento, segurança ou atualização;
-- modelo Alpha 1.3.0, difusor, circuito e controle de software da faixa RGB;
+- difusor físico validado, circuito e controle de software da faixa RGB;
 - prova de autonomia, integridade de gravação longa ou transição segura Arquivos/Gravação;
 - cadeia biométrica autenticada e implementação CTAP/FIDO2;
 - empilhamento 3D com modelos certificados e tolerâncias de montagem;

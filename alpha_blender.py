@@ -1,4 +1,4 @@
-"""ALPHA v1.2.0: real model geometry, separated interfaces and studio rendering.
+"""ALPHA v1.3.0: configurable RGB underglow added to the lower base perimeter.
 Run: blender -b --python alpha_blender.py [-- --preview]
 All helper arguments are millimetres; actual Blender geometry is in metres.
 """
@@ -9,10 +9,10 @@ from mathutils import Vector, Matrix
 ROOT=Path(__file__).resolve().parent
 if ROOT.name=='alpha_blender': ROOT=ROOT.parent
 OUT=ROOT/'alpha_blender'
-VERSION='1.2.0'
+VERSION='1.3.0'
 PREFIX=f'Alpha_v{VERSION}'
 PREVIEW='--preview' in sys.argv
-DEST=Path('/tmp/alpha_v120_preview') if PREVIEW else OUT
+DEST=Path('/tmp/alpha_v130_preview') if PREVIEW else OUT
 DEST.mkdir(exist_ok=True)
 BLEND=DEST/f'{PREFIX}.blend'
 if not PREVIEW and BLEND.exists(): raise FileExistsError(f'Preservar versao existente: {BLEND}')
@@ -21,7 +21,7 @@ bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=Fal
 scene=bpy.context.scene
 scene.unit_settings.system='METRIC'; scene.unit_settings.scale_length=1; scene.unit_settings.length_unit='MILLIMETERS'
 COLS={}
-for name in ['01_Carcaça','02_Teclas_3x3','03_Potenciômetro','04_Chave_microfone','05_Biometria','06_Conectores','07_Estúdio','08_Seleção_camadas','09_Gravador_ambiente']:
+for name in ['01_Carcaça','02_Teclas_3x3','03_Potenciômetro','04_Chave_microfone','05_Biometria','06_Conectores','07_Estúdio','08_Seleção_camadas','09_Gravador_ambiente','10_Faixa_RGB_base']:
     c=bpy.data.collections.new(name); scene.collection.children.link(c); COLS[name]=c
 CURRENT=COLS['01_Carcaça']
 
@@ -54,6 +54,32 @@ gold=material('Contatos dourados',(.63,.37,.095),.85,.25)
 green=material('Filete verde #00FF00 · inserto sólido',(.001,.8,.0005),0,.28,0,.2)
 rubber=material('Borracha da base',(.009,.010,.011),0,.78,.01)
 groundmat=material('Fundo de estúdio',(.028,.031,.035),0,.63,.006)
+
+# Configurable product underglow. These scene properties document the controls
+# expected from the future configuration software and also drive this visual study.
+scene['Faixa_RGB_cor']=[0.0,1.0,0.0]
+scene.id_properties_ui('Faixa_RGB_cor').update(min=0.0,max=1.0,subtype='COLOR')
+scene['Faixa_RGB_brilho']=0.65
+scene.id_properties_ui('Faixa_RGB_brilho').update(min=0.0,max=1.0,description='Brilho ilustrativo da faixa inferior; não representa consumo validado.')
+scene['Faixa_RGB_ligada']=True
+scene.id_properties_ui('Faixa_RGB_ligada').update(description='Liga/desliga a faixa RGB no estudo visual.')
+rgb=material('Faixa RGB · difusor translúcido configurável',(.001,.8,.0005),0,.24,0,.32)
+rgb_bs=rgb.node_tree.nodes.get('Principled BSDF')
+for input_name in ('Base Color','Emission Color'):
+    inp=rgb_bs.inputs[input_name]
+    for component in range(3):
+        drv=inp.driver_add('default_value',component).driver
+        var=drv.variables.new();var.name='c';var.type='SINGLE_PROP'
+        var.targets[0].id_type='SCENE';var.targets[0].id=scene
+        var.targets[0].data_path=f'["Faixa_RGB_cor"][{component}]'
+        drv.expression='max(0.0,min(1.0,c))'
+rgb_strength=rgb_bs.inputs['Emission Strength']
+rgb_strength.default_value=2.925
+drv=rgb_strength.driver_add('default_value').driver
+for name,path in [('on','["Faixa_RGB_ligada"]'),('level','["Faixa_RGB_brilho"]')]:
+    var=drv.variables.new();var.name=name;var.type='SINGLE_PROP'
+    var.targets[0].id_type='SCENE';var.targets[0].id=scene;var.targets[0].data_path=path
+drv.expression='4.5 * on * max(0.0,min(1.0,level))'
 
 # Explicit XY radii are independent of piece thickness.
 def outline(w,d,r,n=12):
@@ -166,6 +192,20 @@ cut(case,orient(rr('Furo microSD',(0,0,0),12.1,2.1,7,.65,black,0),sd,'left'))
 cut(case,orient(rr('Furo USB-C',(0,0,0),9.5,3.75,7,1.75,black,0),usb,'rear'))
 for x in (-40,40):
     for y in (-30,30):disc('Pé de borracha',(x,y,.25),3.4,.9,rubber)
+
+# Continuous RGB diffuser set into the lower base, just above the feet. The
+# recessed channel leaves a dark reveal above and below the luminous strip.
+CURRENT=COLS['10_Faixa_RGB_base']
+RGB_Z=1.66
+RGB_HEIGHT=1.10
+rgb_channel=ring('Canal contínuo da faixa RGB',(0,0,RGB_Z),(105.0,85.0,8.5),(100.15,80.15,6.15),1.48,black)
+cut(case,rgb_channel)
+rgb_band=ring('Faixa RGB | difusor perimetral inferior',(0,0,RGB_Z),(103.75,83.75,7.88),(100.35,80.35,6.18),RGB_HEIGHT,rgb)
+rgb_band['Posição']='Perímetro inferior da base, acima dos pés e abaixo dos conectores.'
+rgb_band['Controle']='Cor, brilho e liga/desliga ilustrados por propriedades da cena.'
+rgb_band['Independência']='Não substitui LEDs de camada nem indicador de gravação.'
+# A narrow downward-facing lip makes the table wash legible from low angles.
+ring('Faixa RGB | emissão inferior para a mesa',(0,0,1.08),(101.6,81.6,6.8),(98.7,78.7,5.55),.16,rgb)
 
 # Discreet separate layer selector, above the nine macro keys.
 CURRENT=COLS['08_Seleção_camadas']
@@ -308,6 +348,7 @@ cams={
  'traseira_USB-C':cam('03 · USB-C traseiro',(110,175,135),(0,0,8),60),
  'vista_superior':cam('04 · topo e matriz 3 × 3',(0,0,220),(0,0,0),scale=122),
  'lateral_microSD_P2':cam('05 · lateral esquerda',(-220,-18,80),(-10,0,8),65),
+ 'faixa_RGB_base':cam('06 · faixa RGB na base',(-128,-175,42),(0,-2,2.2),70),
 }
 scene.camera=cams['frente_esquerda']
 scene.render.engine='CYCLES';scene.cycles.samples=48 if PREVIEW else 96
@@ -318,15 +359,15 @@ scene.render.resolution_x=1000 if PREVIEW else 1600;scene.render.resolution_y=85
 scene.render.resolution_percentage=100;scene.render.image_settings.file_format='PNG'
 scene.view_settings.view_transform='AgX';scene.view_settings.look='AgX - Medium High Contrast';scene.view_settings.exposure=.55
 scene.render.film_transparent=False
-scene['Versão']=VERSION;scene['Origem']='ALPHA v1.1.1; três LEDs de camada, captação lateral e botão de gravação ambiente'
+scene['Versão']=VERSION;scene['Origem']='ALPHA v1.2.0; faixa RGB inferior configurável adicionada após aprovação do usuário.'
 scene['Limitação']='Estudo visual e de encaixes aparentes; não é validação eletrônica ou de fabricação.'
 scene['Mudo']='Somente microfone. Saída do fone independente, requisito para circuito posterior.'
 scene['Dimensões_corpo_mm']=f'104 x 84 x {CASE_TOP-CASE_BOTTOM:.2f}'
 scene['Centro_conectores_z_mm']=PORT_Z
-scene['Alterações']='Três micro LEDs; quatro aberturas acústicas em cada lateral; botão circular de gravação ambiente.'
+scene['Alterações']='Faixa RGB difusa no perímetro inferior da base; cor, brilho e liga/desliga configuráveis na cena.'
 # Bundle a concise record inside the editable .blend.
-text=bpy.data.texts.new('LEIA-ME · versão 1.2.0')
-text.write('ALPHA v1.2.0\nModelo em escala real, metros com exibição em milímetros.\nNove teclas 3x3, sem grafia, 1,25 mm acima da tampa.\nTampa e corpo com junta de 0,15 mm; folgas entre teclas e furos.\nMoldura verde sólida, sem iluminação das teclas.\nP2 e microSD à esquerda, USB-C atrás, todos no centro da espessura da carcaça.\nSeletor auxiliar de camadas 6 x 3 mm, sem inscrição, acima da matriz.\nFader vertical e chave à direita, biometria abaixo.\nTrês LEDs ilustram a camada ativa. Altere a propriedade Camada_ativa da cena (1 a 3).\nBotão circular para modo gravador ambiente e quatro furos acústicos em cada lateral.\nEsta cena detalha a aparência. A compatibilidade e a eletrônica não foram validadas.\n')
+text=bpy.data.texts.new('LEIA-ME · versão 1.3.0')
+text.write('ALPHA v1.3.0\nModelo em escala real, metros com exibição em milímetros.\nPreserva as nove teclas 3x3, biometria, controles, conectores e aberturas da 1.2.0.\nMoldura verde superior sólida, sem iluminação das teclas.\nNova faixa RGB contínua e difusa no perímetro inferior da base, acima dos pés.\nA faixa projeta luz sobre a mesa e permanece separada dos LEDs funcionais.\nAltere Faixa_RGB_cor, Faixa_RGB_brilho e Faixa_RGB_ligada nas propriedades da cena.\nA configuração ilustra o requisito de software; circuito, consumo e firmware não foram implementados.\nP2 e microSD ficam à esquerda; USB-C fica atrás, todos no centro da espessura da carcaça.\nEsta cena detalha a aparência. A compatibilidade e a eletrônica não foram validadas.\n')
 # Save with useful viewport and camera, avoiding an unframed startup view.
 for screen in bpy.data.screens:
     for a in screen.areas:
@@ -339,8 +380,38 @@ for ob in (case,lid):
         if abs(polygon.normal.z)>.95 or (ob == case and max(abs(polygon.normal.x),abs(polygon.normal.y))>.999): polygon.use_smooth=False
 scene.render.filepath=str(DEST/f'{PREFIX}_frente_esquerda.png')
 bpy.ops.wm.save_as_mainfile(filepath=str(BLEND))
-selected=['frente_esquerda','lateral_microSD_P2'] if PREVIEW else list(cams)
+selected=['frente_esquerda','faixa_RGB_base'] if PREVIEW else list(cams)
 for name in selected:
     scene.camera=cams[name];scene.render.filepath=str(DEST/f'{PREFIX}_{name}.png')
     bpy.ops.render.render(write_still=True);print('RENDERED',name,flush=True)
+if not PREVIEW:
+    # A second low-angle render proves that the same geometry/material responds
+    # to a different user-selected color without changing the upper green trim.
+    scene['Faixa_RGB_cor']=[0.0,0.18,1.0]
+    bpy.context.view_layer.update()
+    scene.camera=cams['faixa_RGB_base']
+    scene.render.filepath=str(DEST/f'{PREFIX}_faixa_RGB_azul.png')
+    bpy.ops.render.render(write_still=True);print('RENDERED faixa_RGB_azul',flush=True)
+    scene['Faixa_RGB_cor']=[0.0,1.0,0.0]
+    bpy.context.view_layer.update()
+validation={
+    'versao':VERSION,
+    'teclas_macro':9,
+    'leds_camadas':3,
+    'faixa_rgb':{
+        'continua':True,
+        'posicao':'perimetro inferior da base, acima dos pes e abaixo dos conectores',
+        'altura_centro_z_mm':RGB_Z,
+        'altura_difusor_mm':RGB_HEIGHT,
+        'cor_padrao_rgb':[0.0,1.0,0.0],
+        'variante_renderizada_rgb':[0.0,0.18,1.0],
+        'controles_cena':['Faixa_RGB_cor','Faixa_RGB_brilho','Faixa_RGB_ligada'],
+        'independente_leds_funcionais':True,
+    },
+    'eletronica_implementada':False,
+    'firmware_implementado':False,
+    'consumo_validado':False,
+    'resultado':'Geometria, propriedades e vistas ilustrativas conferidas; difusor, circuito, consumo e software dependem de desenvolvimento.'
+}
+(DEST/f'{PREFIX}_validacao.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('DONE',str(BLEND),flush=True)
