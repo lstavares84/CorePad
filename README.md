@@ -53,6 +53,12 @@ Renders das placas nuas gerados diretamente dos projetos KiCad da revisão 0.2.0
 
 A interface usa chicotes para os controles externos e serve à bancada; a placa superior definitiva ainda precisa ser projetada. **As placas atuais não estão liberadas para fabricação.**
 
+O [arquivo KiCad de posicionamento da PCB UI](development/hardware/ui_mechanical/v0.1.0/CorePad_UI_Posicionamento_v0.1.0.kicad_pcb) registra contorno e centros de teclas/controles na mesma referência do 3D; não tem pads, trilhas ou esquema.
+
+![Planta da PCB UI mecânica exportada do KiCad](docs/images/pcb_ui_placement.svg)
+
+**PCB UI mecânica:** nove centros SW1–SW9 e posições de controles; os retângulos mostram janelas da tampa, não footprints de solda.
+
 - [Interface: esquema](development/hardware/v0.2.0/CorePad_Interface_Bancada_v0.2.0.kicad_sch) e [PCB](development/hardware/v0.2.0/CorePad_Interface_Bancada_v0.2.0.kicad_pcb).
 - [Principal: PCB em estudo](development/hardware/v0.2.0/CorePad_Principal_v0.2.0.kicad_pcb).
 - [BOM por bloco](development/hardware/v0.2.0/BOM.md), [arquitetura de referência](development/hardware/v0.2.0/ARCHITECTURE_REFERENCE.md) e [relatórios ERC/DRC](development/hardware/v0.2.0/reports/).
@@ -72,11 +78,39 @@ Renders derivados da [montagem mecânica editável](development/mechanical/v0.1.
 
 O estudo mecânico usa **104 × 84 × 28,4 mm**, excluindo comandos. A espessura é exploratória e difere do modelo visual Beta. Cada STL contém um sólido fechado; fixações, suportes de PCB, retenções e tolerâncias dos componentes ainda precisam ser fechados.
 
+## Montagem 3D integrada e desenhos
+
+O [conjunto STEP integrado](development/integration/v0.1.0/CorePad_Beta_integrado_v0.1.0.step) inclui base, tampa, difusor, PCB principal e [PCB UI de posicionamento mecânico](development/hardware/ui_mechanical/v0.1.0/CorePad_UI_Posicionamento_v0.1.0.kicad_pcb) exportadas do KiCad, bateria, portas, teclas, biometria e rotas propostas de FFC e fios da bateria. A [fonte paramétrica](development/integration/v0.1.0/build_assembly.py), [peças STEP/STL](development/integration/v0.1.0/parts/), [manifesto](development/integration/v0.1.0/assembly_manifest.json) e [relatório de interferência](development/integration/v0.1.0/fit_report.json) permitem revisão em CAD. A PCB UI ainda não tem pads/trilhas; componentes e cabos são volumes de reserva, sem modelos de fabricante.
+
+![Montagem 3D integrada em posição real](development/integration/v0.1.0/montagem_assembled.png)
+
+**Conjunto montado:** caixa, placas, bateria, controles e cabos na posição nominal. A vista não prova encaixe de componentes de fornecedor.
+
+As vistas de engenharia usam cinza neutro para leitura das peças; o acabamento escolhido continua sendo o carbono da galeria Beta 1.0.1 acima.
+
+| Montagem explodida | Corpo aberto em posição montada |
+|---|---|
+| ![Montagem eletromecânica explodida](development/integration/v0.1.0/montagem_exploded.png) | ![Montagem aberta com placas e controles](development/integration/v0.1.0/montagem_open.png) |
+| Vista para ler o empilhamento de tampa, PCB UI, PCB principal, bateria e base. | Base transparente de inspeção; conectores e cabos estão em posição proposta. |
+
+![Inspeção da passagem de cabos no conjunto](development/integration/v0.1.0/montagem_routing.png)
+
+**Passagem proposta:** a vista isola o FFC de 16 sinais e os dois fios da bateria; PCB UI, tampa e comandos foram ocultados apenas para inspeção. Conectores, terminação, comprimento e raio de dobra ainda não foram escolhidos.
+
+| Planta cotada preliminar | Seção do empilhamento preliminar |
+|---|---|
+| ![Planta do CorePad com cotas nominais](development/integration/v0.1.0/desenho_planta.svg) | ![Seção do CorePad com alturas nominais](development/integration/v0.1.0/desenho_empilhamento.svg) |
+| Envelope 104 × 84 mm e localização de controles. | Alturas das placas, bateria, tampa e folgas nominais. |
+
+Consulte a [BOM mecânica e de cabos](development/integration/v0.1.0/BOM_MECANICA_CABOS.md) e o [índice de liberação de manufatura](development/integration/v0.1.0/LIBERACAO_MANUFATURA.md). Os desenhos são estudo dimensional; **não são desenhos liberados para fabricar**.
+
 [Base STL](development/mechanical/v0.1.0/Base_plastica.stl) · [Tampa STL](development/mechanical/v0.1.0/Tampa_carbono.stl) · [Difusor STL](development/mechanical/v0.1.0/Difusor_RGB.stl) · [Botão de camada STL](development/mechanical/v0.1.0/Botao_camada.stl) · [Botão de gravação STL](development/mechanical/v0.1.0/Botao_gravacao.stl)
 
 ## Software e verificação
 
 O [firmware C11](development/firmware/) contém o núcleo de estados de camadas, cartão, RGB e bateria baixa, testado em host e compilado para Cortex-M33. O [configurador desktop](development/software/configurator.py) edita as 18 macros comuns e RGB, salva JSON e aplica a configuração a um simulador. USB físico, drivers de áudio/cartão, biometria segura e FIDO2 continuam em desenvolvimento.
+
+O [enquadramento de configuração pública](development/software/wire_protocol.py) já valida versão, tamanho, ID de mensagem e CRC32 antes de entregar comandos ao simulador. Ainda não é comunicação USB de produto.
 
 ```sh
 make -C development/firmware test arm
@@ -97,6 +131,7 @@ Comece por [CLAUDE.md](CLAUDE.md), pela [especificação vigente](Especificacao_
 | `development/firmware/` | Núcleo C e testes |
 | `development/software/` | Configurador, protocolo e referência RF64 |
 | `development/mechanical/` | Montagem Blender, STL e gerador das peças |
+| `development/integration/` | Conjunto CAD integrado, desenhos, encaixe e BOM mecânica/chicotes |
 | `docs/` | Estado, roteiro, renders técnicos e scripts de renderização |
 | `.old/` | Alpha, conceitos substituídos e duplicatas; somente histórico |
 

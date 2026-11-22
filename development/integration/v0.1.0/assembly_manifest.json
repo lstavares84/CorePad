@@ -1,0 +1,263 @@
+{
+  "units": "mm",
+  "origin": "centro do corpo, plano inferior Z=0",
+  "envelope_mm": [
+    104,
+    84,
+    28.4
+  ],
+  "items": [
+    {
+      "name": "base_plastica",
+      "bbox_mm": [
+        -52.001,
+        -42.001,
+        -0.001,
+        52.001,
+        42.001,
+        26.001
+      ],
+      "status": "revisao parametrica"
+    },
+    {
+      "name": "tampa_carbono",
+      "bbox_mm": [
+        -52.0,
+        -42.0,
+        25.997,
+        52.0,
+        42.0,
+        28.403
+      ],
+      "status": "acabamento carbono visual"
+    },
+    {
+      "name": "difusor_rgb_base",
+      "bbox_mm": [
+        -51.9,
+        -41.9,
+        1.45,
+        51.9,
+        41.9,
+        2.55
+      ],
+      "status": "translucido a selecionar"
+    },
+    {
+      "name": "pcb_principal_kicad",
+      "bbox_mm": [
+        -49.0,
+        -39.0,
+        12.6,
+        49.0,
+        39.0,
+        14.11
+      ],
+      "status": "KiCad 0.2.0; sem roteamento"
+    },
+    {
+      "name": "pcb_ui_reserva",
+      "bbox_mm": [
+        -49.0,
+        -39.0,
+        20.4,
+        49.0,
+        39.0,
+        21.91
+      ],
+      "status": "contorno KiCad mecanico; sem pads ou roteamento"
+    },
+    {
+      "name": "bateria_reserva",
+      "bbox_mm": [
+        -48.001,
+        -26.001,
+        2.999,
+        12.001,
+        10.001,
+        10.001
+      ],
+      "status": "60 x 36 x 7 mm; celula nao selecionada"
+    },
+    {
+      "name": "usb_c_reserva",
+      "bbox_mm": [
+        -4.5,
+        36.5,
+        12.6,
+        4.5,
+        42.5,
+        15.8
+      ],
+      "status": "corpo aproximado"
+    },
+    {
+      "name": "p2_reserva",
+      "bbox_mm": [
+        -52.001,
+        -21.001,
+        11.199,
+        -43.0,
+        -14.999,
+        17.201
+      ],
+      "status": "corpo aproximado"
+    },
+    {
+      "name": "micro_sd_reserva",
+      "bbox_mm": [
+        -51.0,
+        7.5,
+        13.2,
+        -43.0,
+        20.5,
+        15.2
+      ],
+      "status": "corpo aproximado"
+    },
+    {
+      "name": "ffc_ui_principal",
+      "bbox_mm": [
+        21.0,
+        26.85,
+        14.3,
+        29.0,
+        27.15,
+        20.4
+      ],
+      "status": "rota proposta; 16 vias, pitch nao liberado"
+    },
+    {
+      "name": "ffc_conector_principal",
+      "bbox_mm": [
+        20.0,
+        26.0,
+        14.2,
+        30.0,
+        28.0,
+        15.4
+      ],
+      "status": "reserva"
+    },
+    {
+      "name": "ffc_conector_ui",
+      "bbox_mm": [
+        20.0,
+        26.0,
+        19.2,
+        30.0,
+        28.0,
+        20.4
+      ],
+      "status": "reserva"
+    },
+    {
+      "name": "bateria_cabo_positivo",
+      "bbox_mm": [
+        -47.157,
+        -14.35,
+        9.887,
+        -37.799,
+        -7.65,
+        12.887
+      ],
+      "status": "rota proposta"
+    },
+    {
+      "name": "bateria_cabo_negativo",
+      "bbox_mm": [
+        -47.111,
+        -16.35,
+        9.868,
+        -36.799,
+        -9.65,
+        12.887
+      ],
+      "status": "rota proposta"
+    },
+    {
+      "name": "switches_9_reserva",
+      "bbox_mm": [
+        -41.0,
+        -28.5,
+        22.0,
+        15.0,
+        28.5,
+        26.4
+      ],
+      "status": "envelopes, sem STEP do fabricante"
+    },
+    {
+      "name": "keycaps_9_reserva",
+      "bbox_mm": [
+        -42.2,
+        -29.7,
+        26.8,
+        16.2,
+        29.7,
+        29.6
+      ],
+      "status": "caps customizados a dimensionar"
+    },
+    {
+      "name": "biometria_reserva",
+      "bbox_mm": [
+        25.497,
+        -36.5,
+        25.497,
+        45.503,
+        -16.5,
+        27.503
+      ],
+      "status": "sensor seguro nao selecionado"
+    },
+    {
+      "name": "fader_comando_reserva",
+      "bbox_mm": [
+        32.25,
+        -2.0,
+        27.1,
+        38.75,
+        6.0,
+        29.1
+      ],
+      "status": "haste/curso a validar"
+    },
+    {
+      "name": "mute_comando_reserva",
+      "bbox_mm": [
+        33.5,
+        27.0,
+        26.8,
+        37.5,
+        31.0,
+        28.8
+      ],
+      "status": "haste/DPDT a validar"
+    },
+    {
+      "name": "botao_camada",
+      "bbox_mm": [
+        -16.0,
+        32.9,
+        28.2,
+        -10.0,
+        35.9,
+        29.0
+      ],
+      "status": "interface tatil a validar"
+    },
+    {
+      "name": "botao_gravacao",
+      "bbox_mm": [
+        6.499,
+        32.4,
+        28.199,
+        10.501,
+        36.4,
+        29.001
+      ],
+      "status": "interface tatil a validar"
+    }
+  ]
+}

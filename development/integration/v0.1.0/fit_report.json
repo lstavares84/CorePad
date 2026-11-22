@@ -1,0 +1,69 @@
+{
+  "basis": "CAD STEP 0.1.0; only the listed solid pairs were checked",
+  "overlaps": [
+    {
+      "a": "base_plastica",
+      "b": "tampa_carbono",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "difusor_rgb_base",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "pcb_principal_kicad",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "pcb_ui_reserva",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "bateria_reserva",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "pcb_principal_kicad",
+      "b": "pcb_ui_reserva",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "pcb_principal_kicad",
+      "b": "bateria_reserva",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "usb_c_reserva",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "p2_reserva",
+      "overlap_mm3": 0
+    },
+    {
+      "a": "base_plastica",
+      "b": "micro_sd_reserva",
+      "overlap_mm3": 0
+    }
+  ],
+  "nominal_clearances": {
+    "battery_to_main_mm": 2.6,
+    "main_to_ui_mm": 6.2,
+    "ui_to_lid_mm": 4.0,
+    "battery_bottom_from_floor_mm": 1.0
+  },
+  "unverified": [
+    "component heights",
+    "switch travel",
+    "battery swelling",
+    "FFC bend radius",
+    "fastener placement",
+    "supplier tolerances"
+  ]
+}

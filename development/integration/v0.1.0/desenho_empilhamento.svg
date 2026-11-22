@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="690" viewBox="0 0 1100 690">
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#e8edf2} .small{font-size:13px} .label{font-size:16px} .dim{font-size:14px;fill:#63dcd0} .line{stroke:#c7d3dd;stroke-width:2;fill:none} .guide{stroke:#65939c;stroke-width:1;fill:none} .reserve{stroke:#ffa94d;stroke-width:2;stroke-dasharray:7 5;fill:none} .body{fill:#202a32;stroke:#d5e3ed;stroke-width:2} .board{fill:#126750;stroke:#55dabb;stroke-width:2} .battery{fill:#53606a;stroke:#ffa94d;stroke-width:2;stroke-dasharray:6 4}</style>
+<rect width="100%" height="100%" fill="#101920"/><text x="36" y="44" font-size="25" font-weight="bold" fill="white">Seção e empilhamento preliminar</text>
+<text x="37" y="69" class="small">CorePad Beta Carbon · engenharia v0.1.0 · mm · estudo dimensional, NÃO liberado para manufatura</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#63dcd0"/></marker></defs>
+<rect x="92" y="421" width="416" height="104" class="body"/>
+<rect x="100" y="421" width="400" height="96" fill="#101920"/>
+<rect x="92" y="517" width="416" height="8" fill="#202a32"/>
+<rect x="92" y="411.4" width="416" height="9.6" class="body"/>
+<rect x="104" y="468.2" width="392" height="6.4" class="board"/>
+<rect x="104" y="437" width="392" height="6.4" class="board"/>
+<rect x="108" y="485" width="240" height="28" class="battery"/>
+<rect x="384" y="443.4" width="32" height="24.4" fill="#d89d39"/>
+<line x1="42" y1="525" x2="72" y2="525" class="guide"/>
+<line x1="42" y1="411.4" x2="72" y2="411.4" class="guide"/>
+<line x1="57" y1="525" x2="57" y2="411.4" stroke="#63dcd0" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="32.0" y="460.2" class="dim">28,4</text>
+<text x="56" y="572" class="label">Z0 face inferior</text>
+<text x="58" y="278" class="label">Z28,4 topo da tampa</text>
+<text x="640" y="355" class="label">Tampa 26,0–28,4 mm</text>
+<text x="640" y="392" class="label">PCB UI: 20,4–22,0 mm (reserva)</text>
+<text x="640" y="423" class="label">FFC: 14,3–20,4 mm (proposta)</text>
+<text x="640" y="454" class="label">PCB principal: 12,6–14,2 mm</text>
+<text x="640" y="485" class="label">Bateria: 3,0–10,0 mm (reserva)</text>
+<text x="640" y="516" class="label">Fundo: 0–2,0 mm</text>
+<text x="640" y="550" class="dim">Folgas verticais nominais: 2,6 / 6,2 / 4,0 mm</text><line x1="36" y1="646" x2="1064" y2="646" class="guide"/><text x="36" y="670" class="small">DATUM: X/Y no centro do corpo; Z=0 na face inferior. Medidas nominais; tolerâncias e GD&amp;T pendentes.</text></svg>

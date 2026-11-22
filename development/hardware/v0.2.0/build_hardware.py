@@ -73,7 +73,7 @@ library='(kicad_symbol_lib (version 20241209) (generator "kicad_symbol_editor") 
 (ROOT/'sym-lib-table').write_text('(sym_lib_table (lib (name "CorePad") (type "KiCad") (uri "${KIPRJMOD}/CorePad.kicad_sym") (options "") (descr "CorePad passive harness symbols")))')
 (ROOT/'interface_pins.json').write_text(json.dumps(pins,indent=2)+'\n')
 
-main=p.BOARD();main.SetCopperLayerCount(4);outline(main)
+main=p.BOARD();main.SetCopperLayerCount(4);main.GetDesignSettings().SetBoardThickness(p.FromMM(1.6));outline(main)
 footprint(main,'Package_QFP','LQFP-144_20x20mm_P0.5mm','U1','STM32U5A5ZJT6Q',122,90)
 label(main,'COREPAD BETA - PRINCIPAL 0.2.0 - EM ENGENHARIA',99,44)
 label(main,'MCU sem redes / audio, energia e seguranca pendentes',99,134)

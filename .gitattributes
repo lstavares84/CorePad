@@ -1,0 +1,5 @@
+# Generated CAD/export formats: retain bytes and avoid unreadable line diffs.
+*.step binary
+*.stl binary
+*.blend binary
+docs/images/pcb_ui_placement.svg -diff

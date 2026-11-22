@@ -1,0 +1,131 @@
+{
+  "datum": "X/Y at case centre, Y positive rear",
+  "board_mm": [
+    98,
+    78,
+    1.6
+  ],
+  "switches": [
+    {
+      "ref": "SW1",
+      "center_mm": [
+        -33,
+        20.5
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW2",
+      "center_mm": [
+        -13,
+        20.5
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW3",
+      "center_mm": [
+        7,
+        20.5
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW4",
+      "center_mm": [
+        -33,
+        0
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW5",
+      "center_mm": [
+        -13,
+        0
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW6",
+      "center_mm": [
+        7,
+        0
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW7",
+      "center_mm": [
+        -33,
+        -20.5
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW8",
+      "center_mm": [
+        -13,
+        -20.5
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    },
+    {
+      "ref": "SW9",
+      "center_mm": [
+        7,
+        -20.5
+      ],
+      "opening_mm": [
+        19.6,
+        19.6
+      ]
+    }
+  ],
+  "controls": {
+    "biometric": [
+      35.5,
+      -26.5
+    ],
+    "fader": [
+      35.5,
+      2
+    ],
+    "mute": [
+      35.5,
+      29
+    ],
+    "layer": [
+      -13,
+      34.4
+    ],
+    "record": [
+      8.5,
+      34.4
+    ]
+  }
+}

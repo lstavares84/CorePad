@@ -6,6 +6,8 @@
 
 `CorePad_Principal_v0.2.0.kicad_pcb` contém contorno e footprint do STM32U5A5. O esquema pino a pino, passivos e redes da principal ainda precisam ser desenvolvidos. O estudo Alpha 0.1.0 permanece como origem da arquitetura, com os riscos registrados.
 
+A [PCB UI de posicionamento mecânico](../ui_mechanical/v0.1.0/README.md) agora compartilha com o conjunto 3D o contorno e os centros dos controles. Ela **não** substitui esta interface elétrica de bancada, nem é ainda uma PCB de produto: não tem pads, footprints reais ou roteamento.
+
 Todos os sinais da interface são referidos a GND e trabalham no domínio 3,3 V. Teclas usam pull-up no controlador e fecham contra GND. `MUTE_SENSE` é somente leitura da posição: o corte físico dos microfones permanece na placa principal. `FADER` recebe o cursor de um potenciômetro de 10 kohm entre 3V3 e GND, sujeito a filtro/proteção na principal. J14 alimenta a referência de bancada; conferir o manifesto antes de ligar.
 
 ## Recursos a reservar na principal

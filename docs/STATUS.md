@@ -8,7 +8,7 @@ A revisão visual 1.0.1 refina a trama de carbono, resina, texturas e luz de est
 
 ## Resumo executivo
 
-O CorePad concluiu a fase de definição visual conceitual e iniciou a exploração eletrônica. A Beta 1.0.0 é a proposta visual atual: carcaça e tampa em estilo fibra de carbono, nenhuma linha verde superior e faixa RGB configurável somente na base. A linha Alpha permanece preservada como histórico. A revisão eletrônica 0.1.0 organiza arquitetura, candidatos de componentes, orçamento de energia, estudos de posicionamento e plano de validação, mas ainda não existe uma placa funcional ou fabricável.
+O CorePad concluiu a fase de definição visual conceitual e iniciou a integração eletromecânica. A Beta 1.0.1 é a proposta visual atual: carcaça e tampa em estilo fibra de carbono, nenhuma linha verde superior e faixa RGB configurável somente na base. A linha Alpha permanece preservada como histórico. Existe um conjunto STEP preliminar com peças, placas, bateria e cabos propostos; ainda não existe uma placa funcional ou fabricável.
 
 ## Baselines vigentes
 
@@ -16,9 +16,10 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 |---|---|---|
 | Produto | Especificação 0.7 | Vigente; contém decisões e pendências explícitas |
 | Visual/mecânica | Beta 1.0.1 | Carbono refinado e RGB em cinco cores; material, difusor e fabricação não validados |
-| Eletrônica | 0.2.0 em development/ | Interface de bancada com esquema/redes; principal ainda sem esquema completo ou trilhas |
+| Eletrônica | 0.2.0 em development/ | Interface de bancada com esquema/redes; principal ainda sem esquema completo ou trilhas; UI mecânica 0.1.0 sem pads |
 | Firmware | Núcleo C11 inicial | Estados testados; drivers, USB, áudio e segurança pendentes |
 | Aplicativo/configuração | Configurador desktop inicial | Editor JSON e simulador; transporte USB pendente |
+| Conjunto eletromecânico | Integração 0.1.0 | STEP, desenhos SVG, BOM mecânica e checagem nominal; componentes e cabos de reserva |
 | Protótipo físico | — | Não iniciado |
 
 ## Desenvolvimento integrado após escolha da Beta
@@ -26,6 +27,8 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 O proprietário escolheu seguir com a Beta em fibra de carbono em 22/11/2026. A entrega em `development/` acrescenta um núcleo C11 com estados do cartão/camadas/RGB, compilado para Cortex-M33 e testado em host; um configurador desktop Python com importação/exportação JSON e simulador; um escritor RF64 de referência; um esquema KiCad de interface de bancada com 44 pinos conferidos contra a PCB; e cinco peças plásticas volumétricas em STL/Blender. A BOM por bloco está em `development/hardware/v0.2.0/BOM.md`.
 
 A interface de bancada tem ERC limpo e 29 conexões ainda não roteadas. Ela usa chicotes para switches externos e não substitui a placa final. A principal ainda precisa de esquema completo. O firmware de dispositivo, transporte USB, drivers de áudio/cartão e segurança ainda não foram integrados. As peças mecânicas precisam de suportes, fixações, retenções e validação de componentes reais. Protótipo físico continua não iniciado.
+
+A montagem `development/integration/v0.1.0/` acrescenta STEP paramétrico com 21 grupos, dois desenhos dimensionais preliminares, BOM mecânica/chicotes e relatório de encaixe. As duas placas têm contorno exportado do KiCad, mas a UI é apenas posicionamento mecânico. Dez pares rígidos verificados têm sobreposição nominal zero; isso não valida altura de componentes, tolerâncias ou dilatação da bateria. O protocolo público tem quadro com ID/CRC32 validado somente no simulador.
 
 Evidências e limites: `development/VALIDATION.md`. Próximo avanço: pinagem simultânea, seleção da biometria segura e bancada MCU + áudio + SD antes da liberação das placas finais.
 
@@ -47,7 +50,7 @@ Evidências e limites: `development/VALIDATION.md`. Próximo avanço: pinagem si
 - material e processo reais da carcaça, difusor físico validado, circuito e controle de software da faixa RGB;
 - prova de autonomia, integridade de gravação longa ou transição segura Arquivos/Gravação;
 - cadeia biométrica autenticada e implementação CTAP/FIDO2;
-- empilhamento 3D com modelos certificados e tolerâncias de montagem;
+- empilhamento 3D com modelos certificados, fixações e tolerâncias de montagem; o conjunto preliminar usa volumes de reserva;
 - protótipo, ensaios acústicos, térmicos, EMC/ESD ou de segurança.
 
 ## Riscos prioritários
@@ -64,4 +67,4 @@ Evidências e limites: `development/VALIDATION.md`. Próximo avanço: pinagem si
 
 ## Próxima decisão de avanço
 
-A revisão 0.2.0 só deve começar depois de fechar a matriz de recursos/pinos e de obter evidência inicial para os três maiores riscos de bancada: gravação contínua no microSD, áudio USB simultâneo e consumo. Consulte `docs/ROADMAP.md`.
+Para avançar além do estudo 3D, fechar modelos de fornecedor, pinagem simultânea e evidência de bancada para gravação microSD, áudio USB e consumo. Consulte `docs/ROADMAP.md` e o índice de liberação em `development/integration/v0.1.0/`.

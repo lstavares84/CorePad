@@ -36,9 +36,10 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 **Objetivo:** integrar placas e componentes reais à carcaça sem colisões.
 
 - [ ] Importar modelos 3D certificados dos componentes selecionados.
+- [x] Criar montagem STEP preliminar com PCB principal KiCad, envelope de PCB UI, bateria, carcaça e rotas visuais de cabos; registrar hipóteses.
+- [x] Gerar planta e seção dimensionais preliminares e verificar pares rígidos críticos sem sobreposição nominal.
 - [ ] Fechar empilhamento, tolerâncias, fixações, bateria, dutos acústicos e acesso aos conectores.
-- [ ] Atualizar a Alpha em nova versão, preservando 1.2.0.
-- [x] Modelar conceitualmente a faixa RGB no perímetro inferior, com emissão difusa para a mesa e sem iluminação sob as teclas (Alpha 1.3.0).
+- [x] Modelar conceitualmente a faixa RGB no perímetro inferior, com emissão difusa para a mesa e sem iluminação sob as teclas.
 - [x] Criar a Beta 1.0.0 em estilo fibra de carbono e remover o filete verde superior.
 - [ ] Posicionar e rotear PCB com stack-up do fabricante.
 - [ ] Executar DRC, revisão de retorno de corrente, USB, áudio, energia e segurança.

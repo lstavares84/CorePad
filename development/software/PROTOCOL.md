@@ -12,6 +12,8 @@ Somente comandos `get_config` e `set_config` são aceitos pelo simulador. `set_c
 
 A próxima implementação deve usar canal USB autenticado quando aplicável, versionamento de mensagens, comprimento limitado, CRC/checagem de integridade, IDs, timeout e confirmação de escrita transacional. JSON é o formato de intercâmbio do configurador; não foi decidido que será o formato de armazenamento do MCU.
 
+`wire_protocol.py` agora define o **enquadramento binário de referência** para essa configuração pública, ainda executado somente contra o simulador. Cabeçalho little-endian: `magic CPD1` (4 bytes), versão (1), opcode (1), ID de requisição (2), comprimento (2), payload UTF-8 JSON de até 32.768 bytes, CRC32 (4) sobre cabeçalho + payload. Comandos 1=`GET_CONFIG`, 2=`SET_CONFIG`; respostas 0x81=`CONFIG`, 0x82=`ACK`. Comprimento, CRC e opcode são verificados antes de aplicar a transação. Um quadro inválido não altera a configuração. **CRC não é autenticação nem sigilo**; a camada protegida continua fora deste canal. Ainda faltam transporte USB real, timeouts, tratamento de retry/erro e confirmação de persistência no MCU.
+
 RGB permanece desligado no padrão de desenvolvimento para facilitar ensaios de consumo. A gravação autônoma deve declarar se a faixa estava ligada e em que brilho. O núcleo C desliga RGB ao entrar em bateria baixa.
 
 Textos Unicode no arquivo não provam digitação correta pelo HID. Tradutor de layout Windows/macOS, acentuação e envio de atalhos ainda precisam de implementação e testes.

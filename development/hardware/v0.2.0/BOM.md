@@ -34,7 +34,7 @@ Quantidades por aparelho; candidatos herdados do estudo 0.1.0, acrescidos do RGB
 | CARD1 | 1 | microSDXC até 256 GB | Homologar consumo e latência; não incluso na memória secreta |
 | R/C/L/XTAL | A definir | Passivos, indutores e relógios | Lista incompleta até fechar esquema pino a pino |
 | PCB_MAIN | 1 | FR4 4 camadas | Stack-up, esquema e roteamento pendentes |
-| PCB_UI | 1 | FR4 2 camadas | Placa final distinta da interface de bancada |
+| PCB_UI | 1 | FR4 2 camadas | Contorno/centros no KiCad mecânico 0.1.0; placa elétrica final distinta da interface de bancada |
 | CASE_BASE | 1 | Base plástica isolante | STL de estudo; proposta PA12/ABS para protótipo |
 | CASE_TOP | 1 | Tampa plástica com acabamento carbono | Revestimento proposto; processo final em aberto |
 | DIFFUSER | 1 | Difusor translúcido da base | STL de estudo; testar uniformidade óptica |

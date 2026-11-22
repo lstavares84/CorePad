@@ -9,7 +9,8 @@ A linha escolhida pelo proprietário é a **Beta em aparência de fibra de carbo
 3. `development/README.md`, `development/VALIDATION.md` e `docs/STATUS.md`: implementação e verificações atuais.
 4. `development/hardware/v0.2.0/`: esquema de interface, PCB, BOM e `ARCHITECTURE_REFERENCE.md` com a proposta técnica herdada.
 5. `development/mechanical/v0.1.0/`: peças de prototipagem, cuja espessura exploratória difere do modelo visual.
-6. `docs/ROADMAP.md`: próximos marcos.
+6. `development/integration/v0.1.0/`: CAD paramétrico/STEP da montagem, desenhos e fit report. A PCB principal é contorno KiCad; a UI, bateria, componentes e cabos são volumes de reserva.
+7. `docs/ROADMAP.md`: próximos marcos.
 
 `.old/` contém histórico substituído. Não carregar essa pasta por padrão nem extrair requisitos dela. Consulte apenas para investigar uma decisão antiga. Não restaure o filete verde superior.
 
@@ -20,6 +21,9 @@ A linha escolhida pelo proprietário é a **Beta em aparência de fibra de carbo
 - A principal contém contorno e footprint MCU; esquema completo e roteamento estão pendentes.
 - O firmware é um núcleo C portátil testado. O configurador é um editor com simulador, sem transporte USB físico.
 - As peças plásticas são sólidos fechados para estudo; fixações, suportes e tolerâncias ainda estão pendentes.
+- O STEP integrado tem 21 grupos e dez pares rígidos sem interseção nominal. Não inclui modelos de fornecedor, suportes/fixações finais, tolerâncias ou PCB UI de produto.
+- A PCB UI mecânica em `development/hardware/ui_mechanical/v0.1.0/` compartilha contorno/centros com o CAD, mas não possui pads nem circuito.
+- O enquadramento público CPD1 tem ID/tamanho/CRC32 e testes no simulador; USB real não existe.
 - Gravação, segurança biométrica, FIDO2 e 30 horas de autonomia precisam ser demonstrados em hardware.
 
 ## Regras de desenvolvimento

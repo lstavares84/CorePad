@@ -6,6 +6,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"software"))
 from device import Simulator, default_config, validate
 from rf64 import RF64Writer
+from wire_protocol import encode, decode, json_payload, simulator_exchange, GET_CONFIG, SET_CONFIG, CONFIG, ACK
 
 class ConfigurationTests(unittest.TestCase):
     def test_portuguese_capacity(self):
@@ -33,5 +34,16 @@ class ConfigurationTests(unittest.TestCase):
     def test_incomplete_frame(self):
         writer=RF64Writer(io.BytesIO())
         with self.assertRaises(ValueError):writer.write(b'123')
+    def test_public_frame_and_transaction(self):
+        sim=Simulator(); config=default_config();config['rgb']['color']='#ff6a00'
+        reply=simulator_exchange(sim,encode(SET_CONFIG,42,json_payload(config)))
+        self.assertEqual(decode(reply),(ACK,42,b''))
+        result=decode(simulator_exchange(sim,encode(GET_CONFIG,43)))
+        self.assertEqual((result[0],result[1]),(CONFIG,43))
+        self.assertIn(b'#ff6a00',result[2])
+        bad=bytearray(encode(GET_CONFIG,44));bad[-1]^=1
+        with self.assertRaisesRegex(ValueError,'CRC'):simulator_exchange(sim,bytes(bad))
+        self.assertEqual(sim.config,config)
+        with self.assertRaisesRegex(ValueError,'comprimento'):decode(encode(GET_CONFIG,44)+b'x')
 
 if __name__=='__main__':unittest.main()
