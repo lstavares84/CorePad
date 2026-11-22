@@ -1,8 +1,8 @@
 # CorePad | macropad biométrico e gravador de reuniões
 
-**Definição consolidada em 21/11/2026, atualizada em 22/11/2026, versão 0.6.** Este registro reúne decisões expressas pelo usuário nas conversas de 28/09/2026, 21/11/2026 e 22/11/2026. A definição vigente conserva **9 teclas macro em uma matriz única de 3 × 3**, acrescenta **um botão auxiliar discreto para selecionar camadas**, alinha P2, microSD e USB-C no centro da espessura da carcaça e incorpora **uma faixa RGB configurável no perímetro inferior da base**. As imagens produzidas até aqui são estudos de aparência e não substituem esta especificação. Nas próximas revisões do produto, este documento deve ser consultado antes de criar propostas visuais ou tomar decisões de implementação.
+**Definição consolidada em 21/11/2026, atualizada em 22/11/2026, versão 0.7.** Este registro reúne decisões expressas pelo usuário nas conversas de 28/09/2026, 21/11/2026 e 22/11/2026. A definição vigente conserva **9 teclas macro em uma matriz única de 3 × 3**, acrescenta **um botão auxiliar discreto para selecionar camadas**, alinha P2, microSD e USB-C no centro da espessura da carcaça, incorpora **uma faixa RGB configurável no perímetro inferior da base** e adota a linha visual **Beta**, em estilo fibra de carbono e sem filete verde superior. As imagens produzidas até aqui são estudos de aparência e não substituem esta especificação. Nas próximas revisões do produto, este documento deve ser consultado antes de criar propostas visuais ou tomar decisões de implementação.
 
-**Nome do projeto: CorePad.** Alpha identifica a proposta visual selecionada e suas versões Blender; não é o nome do produto. O repositório de desenvolvimento é privado.
+**Nome do projeto: CorePad.** Alpha e Beta identificam linhas de design e suas versões Blender; não são nomes do produto. Beta é a proposta visual atual, enquanto Alpha permanece preservada como histórico. O repositório de desenvolvimento é privado.
 
 ## Produto e versões
 
@@ -26,7 +26,7 @@ O microSD pode ser acessado pelo computador como unidade removível. Foram aprov
 
 ## Desenho físico da Premium
 
-A prioridade é tornar o dispositivo **o menor possível sem sacrificar as 9 teclas em matriz 3 × 3, a biometria e os controles necessários**. O desenho é minimalista, com caixa em preto carbon e verde `#00FF00` aplicado em pontos específicos. O **filete verde contínuo ao redor da moldura**, visto na última rodada de imagens, foi aprovado. Não há iluminação verde sob as teclas. As **9 teclas são rasas, baixas, alinhadas e sem qualquer grafia**, com pequenos intervalos e pouca área vazia. A aparência exata de material não foi fechada: os acabamentos de alumínio, cerâmica ou outros vistos nos estudos não são especificações de fabricação. O desenho deve buscar componentes de catálogo, sem presumir que a imagem comprove o encaixe mecânico.
+A prioridade é tornar o dispositivo **o menor possível sem sacrificar as 9 teclas em matriz 3 × 3, a biometria e os controles necessários**. O desenho é minimalista. A linha Beta usa carcaça e tampa pretas **em estilo fibra de carbono**. Isso define a aparência pretendida, não confirma fibra de carbono real, processo de laminação ou seleção de material. O antigo **filete verde contínuo ao redor da moldura superior foi desconsiderado** em 22/11/2026 e não deve aparecer em propostas novas; o verde decorativo fica na faixa RGB inferior quando essa cor for escolhida. Não há iluminação sob as teclas. As **9 teclas são rasas, baixas, alinhadas e sem qualquer grafia**, com pequenos intervalos e pouca área vazia. O desenho deve buscar componentes e processos viáveis, sem presumir que a imagem comprove o encaixe mecânico ou a fabricação.
 
 Na face superior, o potenciômetro vertical e a chave mecânica de mudo ficam sempre à **direita**. O sensor biométrico deve ser integrado à face de uso em posição acessível, sem aumentar desnecessariamente o corpo. O **USB-C fica exclusivamente na borda traseira**. A **saída P2 fica sempre na lateral esquerda**. O microSD também fica na lateral esquerda, mais próximo da traseira que o P2. **P2, slot microSD e USB-C devem ter seus centros na metade da espessura da carcaça**, medida entre o fundo do corpo e a face superior da tampa, excluindo pés, teclas e comandos salientes. Esta instrução substitui a interpretação anterior de colocar o microSD em altura diferente do P2. Não colocar o P2 na frente nem deslocar o controle ou a chave para a esquerda.
 
@@ -38,7 +38,7 @@ A Alpha 1.2.0 e a eletrônica 0.1.0 são anteriores a essa decisão. A Alpha 1.3
 
 ## Critérios para a próxima proposta visual
 
-Cada imagem da Premium deve mostrar **9 teclas contáveis, baixas e em matriz 3 × 3**; leitor biométrico visível; um único controle deslizante vertical com botão pequeno à direita; chave mecânica de mudo à direita; filete verde na moldura sem iluminação sob as teclas; faixa RGB difusa no perímetro inferior da base; P2 e microSD na lateral esquerda; USB-C na traseira; os três alinhados no centro da espessura; e um botão auxiliar discreto, sem grafia, para selecionar camadas. As posições e o efeito inferior da faixa devem ser comprovados por vistas adicionais. O desenho não deve afirmar que a independência elétrica entre mudo do microfone e fone, a proteção biométrica, a gravação, a configuração RGB ou FIDO2 estão implementados: esses são requisitos funcionais a demonstrar em projeto e protótipo.
+Cada imagem da Premium deve mostrar **9 teclas contáveis, baixas e em matriz 3 × 3**; leitor biométrico visível; um único controle deslizante vertical com botão pequeno à direita; chave mecânica de mudo à direita; carcaça e tampa em estilo fibra de carbono, **sem filete verde superior** e sem iluminação sob as teclas; faixa RGB difusa no perímetro inferior da base; P2 e microSD na lateral esquerda; USB-C na traseira; os três alinhados no centro da espessura; e um botão auxiliar discreto, sem grafia, para selecionar camadas. As posições, a trama visual e o efeito inferior da faixa devem ser comprovados por vistas adicionais. O desenho não deve afirmar que o material, a independência elétrica entre mudo do microfone e fone, a proteção biométrica, a gravação, a configuração RGB ou FIDO2 estão implementados: esses são requisitos funcionais a demonstrar em projeto e protótipo.
 
 ## Pontos ainda sem decisão fechada
 
@@ -49,6 +49,8 @@ Faltam definir dimensões reais e componentes que caibam no menor corpo possíve
 As exigências originalmente definidas de 12 teclas, três camadas, textos de pelo menos 256 caracteres, USB nativo, configuração sem recompilação, biometria e controle de volume vêm das mensagens de **28/09/2026**. A divisão Base/Premium, gravação, áudio, microSD de 256 GB, arquivo único, identificação de falantes, exclusão de Bluetooth, dois estados Arquivos/Gravação, passkeys/FIDO2 e transcrição vêm das mensagens de **21/11/2026 anteriores aos desenhos**. As decisões de teclas baixas sem grafias, ausência de iluminação, USB-C traseiro, controle vertical, chave independente do fone, moldura verde e tamanho mínimo vêm das **duas rodadas de refinamento visual de 21/11/2026**. A posição fixa do P2 à esquerda, do microSD acima, dos dois controles à direita, a redução do botão do potenciômetro e a exigência de biometria visível vêm da **correção seguinte de 21/11/2026**. A **decisão final deste ciclo, em 21/11/2026**, reduziu a grade para **9 teclas em 3 × 3**, substituindo a contagem anterior, e pediu cinco novas propostas visuais com preferência por componentes de prateleira.
 
 A faixa RGB difusa no perímetro inferior da base e a escolha de sua cor pelo software foram aprovadas pelo usuário em **22/11/2026**, a partir da fotografia de referência de um mouse com iluminação inferior. Essa decisão é posterior à Alpha 1.2.0 e ao estudo eletrônico 0.1.0.
+
+Também em **22/11/2026**, o usuário desconsiderou a linha verde superior e criou a direção de design **Beta**, substituindo a aparência de plástico preto por estilo fibra de carbono. Essa decisão substitui o requisito visual anterior do filete verde superior; os arquivos Alpha permanecem apenas como histórico.
 
 ## Referências de componentes de catálogo para estudo
 
@@ -78,3 +80,7 @@ Os arquivos de desenvolvimento ficam em `alpha_eletronica/v0.1.0/`. A numeraçã
 ## Implementação visual Alpha 1.3.0
 
 Em 22/11/2026, a faixa RGB foi incorporada ao modelo Blender em uma nova revisão, preservando a 1.2.0. O difusor acompanha o perímetro inferior da base, fica acima dos pés e abaixo dos conectores, e projeta luz sobre a mesa. A cena permite variar cor, brilho e estado ligado/desligado e inclui vistas verde e azul para comprovar a variação visual. A eletrônica, o consumo e o software continuam pendentes.
+
+## Design Beta 1.0.0
+
+Em 22/11/2026, foi criada a Beta 1.0.0 como linha visual separada. Ela preserva a geometria funcional da Alpha 1.3.0, remove o filete e o canal verdes da tampa, aplica trama procedural de fibra de carbono preta à carcaça e mantém a faixa RGB somente na base. A trama é uma simulação visual; material, acabamento e processo construtivo reais continuam sujeitos a engenharia e validação.

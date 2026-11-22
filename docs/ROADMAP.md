@@ -39,6 +39,7 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 - [ ] Fechar empilhamento, tolerâncias, fixações, bateria, dutos acústicos e acesso aos conectores.
 - [ ] Atualizar a Alpha em nova versão, preservando 1.2.0.
 - [x] Modelar conceitualmente a faixa RGB no perímetro inferior, com emissão difusa para a mesa e sem iluminação sob as teclas (Alpha 1.3.0).
+- [x] Criar a Beta 1.0.0 em estilo fibra de carbono e remover o filete verde superior.
 - [ ] Posicionar e rotear PCB com stack-up do fabricante.
 - [ ] Executar DRC, revisão de retorno de corrente, USB, áudio, energia e segurança.
 - [ ] Gerar pacote de fabricação somente após aprovação explícita.

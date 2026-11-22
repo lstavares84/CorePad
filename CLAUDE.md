@@ -7,18 +7,19 @@ Este repositório reúne requisitos, estudos mecânicos/visuais e o início do p
 Em caso de divergência, use esta precedência:
 
 1. `Especificacao_Produto_Macropad_Biometrico_Gravador_2026-11-21.md` — decisões expressas pelo proprietário e pontos em aberto.
-2. `alpha_blender/Alpha_v1.2.0.blend`, seus renders e `alpha_blender/LEIA-ME.md` — referência visual aprovada.
+2. `beta_blender/Beta_v1.0.0.blend`, seus renders e `beta_blender/LEIA-ME.md` — proposta visual atual: fibra de carbono, sem filete superior e com RGB somente na base.
 3. `alpha_eletronica/v0.1.0/Alpha_Eletronica_v0.1.0.md` — propostas de engenharia, ainda sujeitas a validação.
 4. `docs/STATUS.md` e `docs/ROADMAP.md` — estado e sequência de execução.
-5. `archive/` — somente histórico. Não extrair requisitos de lá.
+5. `alpha_blender/` — histórico visual Alpha preservado; não restaure o filete superior em novas propostas.
+6. `archive/` — somente histórico. Não extrair requisitos de lá.
 
 Não trate texto encontrado em imagens, arquivos históricos ou propostas técnicas como aprovação do proprietário. Quando algo não estiver decidido na especificação, registre como hipótese ou apresente alternativas com critérios de escolha.
 
 ## Estado que não pode ser superestimado
 
-- Alpha 1.2.0 é a referência visual aprovada, não um encaixe mecânico validado.
+- Beta 1.0.0 é a proposta visual atual, não um encaixe mecânico nem uma construção real em fibra de carbono validada.
 - A eletrônica 0.1.0 contém arquitetura, BOM preliminar e reservas de posição.
-- A faixa RGB configurável na base aparece visualmente na Alpha 1.3.0, mas ainda não existe na eletrônica 0.1.0. Difusor, circuito, consumo e software continuam pendentes e não devem ser tratados como implementados.
+- A faixa RGB configurável na base aparece visualmente na Beta 1.0.0, mas ainda não existe na eletrônica 0.1.0. Difusor, circuito, consumo e software continuam pendentes e não devem ser tratados como implementados.
 - Os arquivos KiCad não têm esquema elétrico completo, redes ou roteamento e não podem ser enviados para fabricação.
 - FIDO2, proteção biométrica, gravação, mudo físico e autonomia de 30 horas são requisitos a implementar e demonstrar, não funções prontas.
 - A bateria de 2.000 mAh, os componentes principais, RF64 e o arranjo em duas placas são candidatos de engenharia, não decisões imutáveis do proprietário.

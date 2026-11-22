@@ -21,3 +21,5 @@ A versão 1.2.0 inclui três micro LEDs de 0,92 mm junto ao seletor de camadas e
 Depois da aprovação da 1.2.0, o usuário definiu uma faixa RGB difusa no perímetro inferior da base, inspirada na iluminação inferior de um mouse, com cor escolhida pelo software. A 1.3.0 abre um canal contínuo logo acima dos pés, insere um difusor perimetral de 1,10 mm e acrescenta uma aba emissiva inferior para projetar luz sobre a mesa. O filete superior permanece verde e não há iluminação sob as teclas.
 
 As propriedades de cena `Faixa_RGB_cor`, `Faixa_RGB_brilho` e `Faixa_RGB_ligada` controlam o material ilustrativo. A cena abre com verde e inclui renders de verificação em verde e azul. Essas propriedades demonstram a intenção de configuração; não implementam circuito, firmware, consumo ou o software do produto.
+
+A Alpha permanece preservada como histórico. A decisão posterior que originou a Beta 1.0.0 elimina o filete verde superior nas propostas novas e adota estilo de fibra de carbono; não modificar retroativamente os arquivos Alpha já entregues.
