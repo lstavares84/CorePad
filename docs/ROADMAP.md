@@ -22,7 +22,7 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 
 **Objetivo:** produzir esquemas completos e uma BOM coerente para revisão técnica.
 
-- [ ] Criar `alpha_eletronica/v0.2.0/` sem sobrescrever 0.1.0.
+- [x] Iniciar `development/hardware/v0.2.0/`, preservando o histórico em `.old/`.
 - [ ] Elaborar esquemas pino a pino de alimentação, MCU, USB, áudio, microSD, segurança, biometria e interface.
 - [ ] Dimensionar passivos, relógios, filtros, proteções ESD e pontos de teste.
 - [ ] Fechar conectores entre placas e estratégia de programação/depuração.

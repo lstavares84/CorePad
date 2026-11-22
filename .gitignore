@@ -10,8 +10,7 @@ __pycache__/
 .DS_Store
 
 # O acervo histórico faz parte desta importação, inclusive backups Blender antigos.
-!archive/*.blend1
-!archive/**/*.blend1
+!.old/**/*.blend1
 
 # Preferências locais de agentes e IDEs; a orientação compartilhada fica em CLAUDE.md
 .agents/

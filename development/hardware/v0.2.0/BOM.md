@@ -49,4 +49,4 @@ Quantidades por aparelho; candidatos herdados do estudo 0.1.0, acrescidos do RGB
 | J1–J14 | 14 | Pin header 1 × 2, passo 2,54 mm | Footprint KiCad; fabricante/código a escolher |
 | J20 | 1 | Pin header 2 × 8, passo 2,54 mm | Saída do chicote; conferir orientação em `interface_pins.json` |
 
-Fontes: códigos e links no relatório `alpha_eletronica/v0.1.0/Alpha_Eletronica_v0.1.0.md`; ST, TI TAC5112 e Kailh reconferidos em 22/11/2026. Estoque, preço, equivalentes e demais fichas ainda não foram revalidados nesta revisão.
+Fontes: códigos e links em `ARCHITECTURE_REFERENCE.md`, preservado nesta pasta a partir do estudo inicial; ST, TI TAC5112 e Kailh reconferidos em 22/11/2026. Estoque, preço, equivalentes e demais fichas ainda não foram revalidados nesta revisão.

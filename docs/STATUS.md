@@ -2,6 +2,8 @@
 
 Atualizado em 22/11/2026.
 
+Repositório organizado em torno da Beta carbon. A linha Alpha, conceitos descartados e geradores duplicados foram movidos para `.old/`. O relatório de arquitetura ainda útil foi preservado no pacote eletrônico ativo. O README contém vistas do produto, renders KiCad e vistas das peças plásticas, com suas fontes e limitações de estágio.
+
 ## Resumo executivo
 
 O CorePad concluiu a fase de definição visual conceitual e iniciou a exploração eletrônica. A Beta 1.0.0 é a proposta visual atual: carcaça e tampa em estilo fibra de carbono, nenhuma linha verde superior e faixa RGB configurável somente na base. A linha Alpha permanece preservada como histórico. A revisão eletrônica 0.1.0 organiza arquitetura, candidatos de componentes, orçamento de energia, estudos de posicionamento e plano de validação, mas ainda não existe uma placa funcional ou fabricável.
