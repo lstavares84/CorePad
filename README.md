@@ -44,7 +44,20 @@ Luz difusa junto à mesa, com anteparo interno e sem linha verde superior.
 
 ## PCB: estado atual dos arquivos KiCad
 
-Renders das placas nuas gerados diretamente dos projetos KiCad da revisão 0.2.0. Mostram pads, furos e serigrafia; modelos 3D dos componentes de catálogo não estão incluídos no ambiente de renderização. A ausência de trilhas corresponde ao estado real do projeto.
+**Revisão ativa 0.3.0 — placas e encaixe:** a [PCB UI de duas camadas](development/hardware/v0.3.0/CorePad_UI_v0.3.0.kicad_pcb) contém nove footprints piloto Kailh Choc V2, FFC de 24 vias e **seis de nove sinais de teclas roteados**. A [PCB principal de quatro camadas](development/hardware/v0.3.0/CorePad_Main_v0.3.0.kicad_pcb) posiciona MCU, codec, amplificador, USB-C, microSD, P2 e FFC com footprints candidatos; não possui circuito completo nem trilhas funcionais. Consulte o [guia eletrônico](development/hardware/v0.3.0/README.md), a [pinagem proposta](development/hardware/v0.3.0/interconnect_24.json), a [BOM atualizada dos componentes posicionados](development/hardware/v0.3.0/BOM_DELTA.md) e os relatórios DRC: [UI](development/hardware/v0.3.0/ui_drc.txt) e [principal](development/hardware/v0.3.0/main_drc.txt).
+
+| Trilhas piloto da UI | Componentes candidatos na principal |
+|---|---|
+| ![Placa UI, cobre nas duas faces e seis teclas roteadas](development/hardware/v0.3.0/CorePad_UI_trilhas.png) | ![Placa principal, footprints de processamento e portas](development/hardware/v0.3.0/CorePad_Main_componentes.png) |
+| Três sinais de tecla e terra ainda abertos; DRC sem violações geométricas. | Posicionamento apenas; DRC com 8 violações, sem esquema completo. |
+
+O [conjunto STEP integrado 0.2.0](development/integration/v0.2.0/CorePad_Beta_PCB_match_v0.2.0.step) substitui as placas nuas anteriores pelas exportações KiCad 0.3.0 e adiciona envelopes dos componentes e FFC. O [relatório de encaixe](development/integration/v0.2.0/README.md) identifica **choques do USB-C e microSD com a base**, desvio vertical **2,41 mm** entre P2 e abertura, ausência de suportes das placas e dobra do FFC ainda não comprovada. Esses achados impedem liberação para fabricação.
+
+![Conjunto 3D transparente com PCBs KiCad, componentes, bateria e caixa](development/integration/v0.2.0/montagem_PCB_match_v0.2.0.png)
+
+### Estudos anteriores
+
+Os renders abaixo mostram o estudo 0.2.0 de bancada e posicionamento anterior. Não representam as placas ativas 0.3.0.
 
 | Interface de bancada | Placa principal em estudo |
 |---|---|
@@ -78,9 +91,9 @@ Renders derivados da [montagem mecânica editável](development/mechanical/v0.1.
 
 O estudo mecânico usa **104 × 84 × 28,4 mm**, excluindo comandos. A espessura é exploratória e difere do modelo visual Beta. Cada STL contém um sólido fechado; fixações, suportes de PCB, retenções e tolerâncias dos componentes ainda precisam ser fechados.
 
-## Montagem 3D integrada e desenhos
+## Montagem 3D integrada e desenhos — estudo anterior 0.1.0
 
-O [conjunto STEP integrado](development/integration/v0.1.0/CorePad_Beta_integrado_v0.1.0.step) inclui base, tampa, difusor, PCB principal e [PCB UI de posicionamento mecânico](development/hardware/ui_mechanical/v0.1.0/CorePad_UI_Posicionamento_v0.1.0.kicad_pcb) exportadas do KiCad, bateria, portas, teclas, biometria e rotas propostas de FFC e fios da bateria. A [fonte paramétrica](development/integration/v0.1.0/build_assembly.py), [peças STEP/STL](development/integration/v0.1.0/parts/), [manifesto](development/integration/v0.1.0/assembly_manifest.json) e [relatório de interferência](development/integration/v0.1.0/fit_report.json) permitem revisão em CAD. A PCB UI ainda não tem pads/trilhas; componentes e cabos são volumes de reserva, sem modelos de fabricante.
+O [conjunto STEP 0.1.0](development/integration/v0.1.0/CorePad_Beta_integrado_v0.1.0.step) documenta a geometria original da base, tampa, difusor, bateria e cabos. Usa a [PCB UI mecânica anterior](development/hardware/ui_mechanical/v0.1.0/CorePad_UI_Posicionamento_v0.1.0.kicad_pcb), sem pads/trilhas. A [fonte paramétrica](development/integration/v0.1.0/build_assembly.py), [peças STEP/STL](development/integration/v0.1.0/parts/), [manifesto](development/integration/v0.1.0/assembly_manifest.json) e [relatório anterior](development/integration/v0.1.0/fit_report.json) permanecem como histórico de engenharia. Para conferir a eletrônica atual com a caixa, use a **revisão 0.2.0** ligada acima.
 
 ![Montagem 3D integrada em posição real](development/integration/v0.1.0/montagem_assembled.png)
 

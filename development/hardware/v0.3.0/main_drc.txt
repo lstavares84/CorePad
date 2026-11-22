@@ -1,0 +1,74 @@
+** Drc report for CorePad_Main_v0.3.0.kicad_pcb **
+** Created on 2026-11-22T20:29:44-0300 **
+
+** Found 8 DRC violations **
+[hole_clearance]: Violação do isolamento do furo (configuração das restrições do furo isolamento 0.2500 mm; atual 0.1944 mm)
+    Regra: configuração das restrições do furo; error
+    @(101.8900 mm, 55.1050 mm): ilha NPTH de J_USB
+    @(102.2000 mm, 56.1800 mm): Ilha A1 [GND] de J_USB no F.Cu
+[hole_clearance]: Violação do isolamento do furo (configuração das restrições do furo isolamento 0.2500 mm; atual 0.1944 mm)
+    Regra: configuração das restrições do furo; error
+    @(101.8900 mm, 55.1050 mm): ilha NPTH de J_USB
+    @(102.2000 mm, 56.1800 mm): Ilha B12 [GND] de J_USB no F.Cu
+[hole_clearance]: Violação do isolamento do furo (configuração das restrições do furo isolamento 0.2500 mm; atual 0.1944 mm)
+    Regra: configuração das restrições do furo; error
+    @(96.1100 mm, 55.1050 mm): ilha NPTH de J_USB
+    @(95.8000 mm, 56.1800 mm): Ilha A12 [GND] de J_USB no F.Cu
+[hole_clearance]: Violação do isolamento do furo (configuração das restrições do furo isolamento 0.2500 mm; atual 0.1944 mm)
+    Regra: configuração das restrições do furo; error
+    @(96.1100 mm, 55.1050 mm): ilha NPTH de J_USB
+    @(95.8000 mm, 56.1800 mm): Ilha B1 [GND] de J_USB no F.Cu
+[silk_edge_clearance]: A serigrafia foi cortada pela borda da placa
+    Regra: configuração da serigrafia da placa; warning
+    @(50.0000 mm, 50.0000 mm): Segmento no Edge.Cuts
+    @(49.9000 mm, 103.9000 mm): Segmento de J_P2 em F.Silkscreen
+[silk_edge_clearance]: A serigrafia foi cortada pela borda da placa
+    Regra: configuração da serigrafia da placa; warning
+    @(50.0000 mm, 50.0000 mm): Segmento no Edge.Cuts
+    @(51.1000 mm, 110.1000 mm): Segmento de J_P2 em F.Silkscreen
+[silk_edge_clearance]: A serigrafia foi cortada pela borda da placa
+    Regra: configuração da serigrafia da placa; warning
+    @(50.0000 mm, 50.0000 mm): Segmento no Edge.Cuts
+    @(48.1150 mm, 68.0050 mm): Segmento de J_SD em F.Silkscreen
+[silk_edge_clearance]: A serigrafia foi cortada pela borda da placa
+    Regra: configuração da serigrafia da placa; warning
+    @(50.0000 mm, 50.0000 mm): Segmento no Edge.Cuts
+    @(48.1150 mm, 81.9750 mm): Segmento de J_SD em F.Silkscreen
+
+** Found 8 unconnected pads **
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(70.7500 mm, 52.6000 mm): Ilha 16 [GND] de J_UI no F.Cu
+    @(70.2500 mm, 52.6000 mm): Ilha 15 [GND] de J_UI no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(102.2000 mm, 56.1800 mm): Ilha A1 [GND] de J_USB no F.Cu
+    @(95.8000 mm, 56.1800 mm): Ilha B1 [GND] de J_USB no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(70.7500 mm, 52.6000 mm): Ilha 16 [GND] de J_UI no F.Cu
+    @(95.8000 mm, 56.1800 mm): Ilha B1 [GND] de J_USB no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(48.2750 mm, 77.7250 mm): Ilha 6 [GND] de J_SD no F.Cu
+    @(52.4000 mm, 110.7000 mm): Ilha S [GND] de J_P2 no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(70.2500 mm, 52.6000 mm): Ilha 15 [GND] de J_UI no F.Cu
+    @(48.2750 mm, 77.7250 mm): Ilha 6 [GND] de J_SD no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(98.2500 mm, 56.1800 mm): Ilha B6 [USB_D+] de J_USB no F.Cu
+    @(99.2500 mm, 56.1800 mm): Ilha A6 [USB_D+] de J_USB no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(98.7500 mm, 56.1800 mm): Ilha A7 [USB_D-] de J_USB no F.Cu
+    @(99.7500 mm, 56.1800 mm): Ilha B7 [USB_D-] de J_USB no F.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(96.6000 mm, 56.1800 mm): Ilha B4 [VBUS] de J_USB no F.Cu
+    @(101.4000 mm, 56.1800 mm): Ilha A4 [VBUS] de J_USB no F.Cu
+
+** Found 0 Footprint errors **
+
+** End of Report **

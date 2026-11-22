@@ -11,9 +11,11 @@ Esta entrega implementa a base de software e modelos de prototipagem. A placa pr
 | Protocolo | `software/device.py` | Contrato e validação de configuração; transporte USB físico pendente |
 | Gravação RF64 | `software/rf64.py` | Escritor PCM de referência, testado com arquivo pequeno; não executa no MCU |
 | Eletrônica KiCad | `hardware/v0.2.0/` | Esquema de bancada da interface e PCB com redes; principal com footprint MCU, sem esquema completo/roteamento |
+| Placas ativas KiCad | `hardware/v0.3.0/` | UI com nove switches e FFC 24 vias, seis teclas roteadas; principal com footprints candidatos de MCU, áudio e portas |
 | Peças plásticas | `mechanical/v0.1.0/` | Base, tampa, difusor e botões editáveis; STL para estudo de encaixe |
 | BOM | `hardware/v0.2.0/BOM.md` | Lista por bloco com códigos candidatos e pendências; sem preço total fictício |
 | Montagem 3D integrada | `integration/v0.1.0/` | STEP conjunto e peças, placa principal KiCad, volumes de reserva, cabos propostos, dois desenhos SVG e relatório de encaixe |
+| Revisão PCB/caixa | `integration/v0.2.0/` | STEP das duas PCBs 0.3.0 com caixa e envelopes; USB-C/microSD colidem, P2 desalinhado, suportes ausentes |
 | PCB UI mecânica | `hardware/ui_mechanical/v0.1.0/` | Contorno KiCad e centros dos controles, sem pads ou trilhas |
 | Enquadramento de mensagens | `software/wire_protocol.py` | Quadro com ID, limite de tamanho e CRC32 testado no simulador; ainda sem USB físico |
 
@@ -38,6 +40,6 @@ O configurador usa Python 3 e Tkinter. O simulador e os testes usam apenas a bib
 5. Validar os footprints de catálogo, empilhamento, curso das teclas, conectores e bateria com peças/modelos reais.
 6. Rotear, revisar ERC/DRC, montar protótipo e medir os requisitos de áudio e 30 horas.
 
-O [dossiê de manufatura](integration/v0.1.0/LIBERACAO_MANUFATURA.md) identifica desenhos, BOM, modelos e testes ainda necessários. O [STEP integrado](integration/v0.1.0/CorePad_Beta_integrado_v0.1.0.step) é estudo dimensional, sem liberação de ferramental.
+O [dossiê de manufatura](integration/v0.1.0/LIBERACAO_MANUFATURA.md) identifica desenhos, BOM, modelos e testes ainda necessários. A [revisão integrada atual](integration/v0.2.0/README.md) mede os choques de portas e a falta de fixação. Ambos os conjuntos STEP são estudos dimensionais, sem liberação de ferramental.
 
 Não foi realizado ensaio de hardware nesta entrega. O relatório KiCad registra conexões ainda abertas. Não há Gerbers liberados.

@@ -1,0 +1,62 @@
+** Drc report for CorePad_UI_v0.3.0.kicad_pcb **
+** Created on 2026-11-22T20:29:44-0300 **
+
+** Found 0 DRC violations **
+
+** Found 13 unconnected pads **
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(70.7500 mm, 58.4000 mm): Ilha 16 [GND] de J_UI no B.Cu
+    @(70.2500 mm, 58.4000 mm): Ilha 15 [GND] de J_UI no B.Cu
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(70.7500 mm, 58.4000 mm): Ilha 16 [GND] de J_UI no B.Cu
+    @(71.9000 mm, 68.5000 mm): Ilha PTH 2 [GND] de SW1
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(71.9000 mm, 68.5000 mm): Ilha PTH 2 [GND] de SW1
+    @(91.9000 mm, 68.5000 mm): Ilha PTH 2 [GND] de SW2
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(71.9000 mm, 109.5000 mm): Ilha PTH 2 [GND] de SW7
+    @(91.9000 mm, 109.5000 mm): Ilha PTH 2 [GND] de SW8
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(91.9000 mm, 89.0000 mm): Ilha PTH 2 [GND] de SW5
+    @(111.9000 mm, 89.0000 mm): Ilha PTH 2 [GND] de SW6
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(91.9000 mm, 89.0000 mm): Ilha PTH 2 [GND] de SW5
+    @(71.9000 mm, 89.0000 mm): Ilha PTH 2 [GND] de SW4
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(91.9000 mm, 109.5000 mm): Ilha PTH 2 [GND] de SW8
+    @(111.9000 mm, 109.5000 mm): Ilha PTH 2 [GND] de SW9
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(91.9000 mm, 68.5000 mm): Ilha PTH 2 [GND] de SW2
+    @(111.9000 mm, 68.5000 mm): Ilha PTH 2 [GND] de SW3
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(71.9000 mm, 68.5000 mm): Ilha PTH 2 [GND] de SW1
+    @(71.9000 mm, 89.0000 mm): Ilha PTH 2 [GND] de SW4
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(111.9000 mm, 109.5000 mm): Ilha PTH 2 [GND] de SW9
+    @(111.9000 mm, 89.0000 mm): Ilha PTH 2 [GND] de SW6
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(64.7500 mm, 58.4000 mm): Ilha 4 [KEY4] de J_UI no B.Cu
+    @(69.8000 mm, 84.0000 mm): Ilha PTH 1 [KEY4] de SW4
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(66.2500 mm, 58.4000 mm): Ilha 7 [KEY7] de J_UI no B.Cu
+    @(69.8000 mm, 104.5000 mm): Ilha PTH 1 [KEY7] de SW7
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(66.7500 mm, 58.4000 mm): Ilha 8 [KEY8] de J_UI no B.Cu
+    @(89.8000 mm, 104.5000 mm): Ilha PTH 1 [KEY8] de SW8
+
+** Found 0 Footprint errors **
+
+** End of Report **

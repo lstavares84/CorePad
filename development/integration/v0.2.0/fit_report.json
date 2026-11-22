@@ -1,0 +1,68 @@
+{
+  "units": "mm",
+  "board_to_case_intersection_mm3": {
+    "main": {
+      "base": 0.0,
+      "lid": 0.0,
+      "battery": 0.0
+    },
+    "ui": {
+      "base": 0.0,
+      "lid": 0.0,
+      "battery": 0.0
+    }
+  },
+  "component_to_case_intersection_mm3": {
+    "microSD_DM3AT": {
+      "base": 2.533,
+      "lid": 0.0
+    },
+    "P2_SJ3523": {
+      "base": 0.0,
+      "lid": 0.0
+    },
+    "USB_C_USB4105": {
+      "base": 9.828,
+      "lid": 0.0
+    },
+    "FFC24_main": {
+      "base": 0.0,
+      "lid": 0.0
+    },
+    "FFC24_ui": {
+      "base": 0.0,
+      "lid": 0.0
+    },
+    "MCU_LQFP144": {
+      "base": 0.0,
+      "lid": 0.0
+    }
+  },
+  "z_stack_mm": {
+    "battery_top": 10,
+    "main_bottom": 12.6,
+    "main_top": 14.11,
+    "ui_bottom": 20.4,
+    "ui_top": 21.91,
+    "lid_bottom": 26,
+    "lid_top": 28.4,
+    "main_to_ui_clearance": 6.29,
+    "FFC_body_to_body_gap": 2.29,
+    "switch_body_top": 28.31,
+    "switch_body_top_below_lid_top": 0.09
+  },
+  "port_alignment_mm": {
+    "P2_jack_center_z": 16.61,
+    "P2_case_aperture_center_z": 14.2,
+    "P2_offset_up": 2.41,
+    "microSD_body_top": 15.79,
+    "microSD_aperture_top": 15.7
+  },
+  "critical_non_geometric": [
+    "Both PCBs lack mounting holes/standoffs at their nominal Z planes; base corner bosses stop at Z=7.",
+    "FFC bend and insertion orientation have no manufacturer cable model or bend-radius verification.",
+    "Keycap/actuator dimensions and biometric module are not supplier controlled.",
+    "P2 aperture center differs from actual candidate jack center; body-box no-overlap alone does not validate plug access.",
+    "USB and microSD candidate body boxes intersect the previous base and require case/placement revision."
+  ]
+}

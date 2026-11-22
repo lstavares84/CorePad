@@ -1,0 +1,191 @@
+[
+  {
+    "ref": "SW1",
+    "center_mm": [
+      -33,
+      20.5
+    ],
+    "terminal1_mm": [
+      -29.2,
+      25.5
+    ],
+    "terminal2_mm": [
+      -27.1,
+      20.5
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW2",
+    "center_mm": [
+      -13,
+      20.5
+    ],
+    "terminal1_mm": [
+      -9.2,
+      25.5
+    ],
+    "terminal2_mm": [
+      -7.1,
+      20.5
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW3",
+    "center_mm": [
+      7,
+      20.5
+    ],
+    "terminal1_mm": [
+      10.8,
+      25.5
+    ],
+    "terminal2_mm": [
+      12.9,
+      20.5
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW4",
+    "center_mm": [
+      -33,
+      0
+    ],
+    "terminal1_mm": [
+      -29.2,
+      5
+    ],
+    "terminal2_mm": [
+      -27.1,
+      0
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW5",
+    "center_mm": [
+      -13,
+      0
+    ],
+    "terminal1_mm": [
+      -9.2,
+      5
+    ],
+    "terminal2_mm": [
+      -7.1,
+      0
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW6",
+    "center_mm": [
+      7,
+      0
+    ],
+    "terminal1_mm": [
+      10.8,
+      5
+    ],
+    "terminal2_mm": [
+      12.9,
+      0
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW7",
+    "center_mm": [
+      -33,
+      -20.5
+    ],
+    "terminal1_mm": [
+      -29.2,
+      -15.5
+    ],
+    "terminal2_mm": [
+      -27.1,
+      -20.5
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW8",
+    "center_mm": [
+      -13,
+      -20.5
+    ],
+    "terminal1_mm": [
+      -9.2,
+      -15.5
+    ],
+    "terminal2_mm": [
+      -7.1,
+      -20.5
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  },
+  {
+    "ref": "SW9",
+    "center_mm": [
+      7,
+      -20.5
+    ],
+    "terminal1_mm": [
+      10.8,
+      -15.5
+    ],
+    "terminal2_mm": [
+      12.9,
+      -20.5
+    ],
+    "body_mm": [
+      15,
+      15
+    ],
+    "body_above_pcb_mm": 6.4,
+    "terminal_below_pcb_mm": 2.2
+  }
+]

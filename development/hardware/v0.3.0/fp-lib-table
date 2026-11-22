@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "CorePad") (type "KiCad") (uri "${KIPRJMOD}/CorePad.pretty") (options "") (descr "CorePad pilot footprints")))

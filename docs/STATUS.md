@@ -16,10 +16,10 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a integraç
 |---|---|---|
 | Produto | Especificação 0.7 | Vigente; contém decisões e pendências explícitas |
 | Visual/mecânica | Beta 1.0.1 | Carbono refinado e RGB em cinco cores; material, difusor e fabricação não validados |
-| Eletrônica | 0.2.0 em development/ | Interface de bancada com esquema/redes; principal ainda sem esquema completo ou trilhas; UI mecânica 0.1.0 sem pads |
+| Eletrônica | 0.3.0 em development/hardware/ | UI com nove switches, FFC 24 vias e seis teclas roteadas; principal com footprints candidatos, sem esquema completo/roteamento |
 | Firmware | Núcleo C11 inicial | Estados testados; drivers, USB, áudio e segurança pendentes |
 | Aplicativo/configuração | Configurador desktop inicial | Editor JSON e simulador; transporte USB pendente |
-| Conjunto eletromecânico | Integração 0.1.0 | STEP, desenhos SVG, BOM mecânica e checagem nominal; componentes e cabos de reserva |
+| Conjunto eletromecânico | Integração 0.2.0 | STEP com as duas placas KiCad 0.3.0; choque de USB-C/microSD, P2 desalinhado e suportes ausentes |
 | Protótipo físico | — | Não iniciado |
 
 ## Desenvolvimento integrado após escolha da Beta
@@ -28,7 +28,7 @@ O proprietário escolheu seguir com a Beta em fibra de carbono em 22/11/2026. A 
 
 A interface de bancada tem ERC limpo e 29 conexões ainda não roteadas. Ela usa chicotes para switches externos e não substitui a placa final. A principal ainda precisa de esquema completo. O firmware de dispositivo, transporte USB, drivers de áudio/cartão e segurança ainda não foram integrados. As peças mecânicas precisam de suportes, fixações, retenções e validação de componentes reais. Protótipo físico continua não iniciado.
 
-A montagem `development/integration/v0.1.0/` acrescenta STEP paramétrico com 21 grupos, dois desenhos dimensionais preliminares, BOM mecânica/chicotes e relatório de encaixe. As duas placas têm contorno exportado do KiCad, mas a UI é apenas posicionamento mecânico. Dez pares rígidos verificados têm sobreposição nominal zero; isso não valida altura de componentes, tolerâncias ou dilatação da bateria. O protocolo público tem quadro com ID/CRC32 validado somente no simulador.
+A montagem `development/integration/v0.2.0/` atualiza o STEP com duas placas KiCad reais e 32 grupos. O choque nominal de volumes candidatos com a base é 9,828 mm³ no USB-C e 2,533 mm³ no microSD; o centro do jack P2 está 2,41 mm acima da abertura. As placas nuas não colidem, mas faltam suportes e furos. O cabo FFC 24 vias é uma reserva espacial, sem dobra validada. A UI tem seis trilhas de tecla, zero violações geométricas e 13 conexões abertas; a principal tem oito violações e oito conexões abertas entre pads já nomeados. O protocolo público tem quadro com ID/CRC32 validado somente no simulador.
 
 Evidências e limites: `development/VALIDATION.md`. Próximo avanço: pinagem simultânea, seleção da biometria segura e bancada MCU + áudio + SD antes da liberação das placas finais.
 
@@ -45,7 +45,7 @@ Evidências e limites: `development/VALIDATION.md`. Próximo avanço: pinagem si
 
 - esquema pino a pino e seleção completa de passivos/proteções;
 - pinagem simultânea comprovada para todos os periféricos;
-- placa roteada, ERC/DRC de produção ou Gerbers;
+- placas totalmente roteadas, ERC/DRC de produção ou Gerbers; somente seis sinais de tecla da UI têm trilhas piloto;
 - firmware de teclado, áudio, armazenamento, segurança ou atualização;
 - material e processo reais da carcaça, difusor físico validado, circuito e controle de software da faixa RGB;
 - prova de autonomia, integridade de gravação longa ou transição segura Arquivos/Gravação;

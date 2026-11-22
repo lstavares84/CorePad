@@ -1,0 +1,398 @@
+{
+  "units": "mm",
+  "origin": "case centre at bottom",
+  "main_board_z": [
+    12.6,
+    14.11
+  ],
+  "ui_board_z": [
+    20.4,
+    21.91
+  ],
+  "items": [
+    {
+      "name": "base_plastica",
+      "bounds_mm": [
+        -52.001,
+        -42.001,
+        -0.001,
+        52.001,
+        42.001,
+        26.001
+      ],
+      "status": "from mechanical v0.1.0; ports not recut"
+    },
+    {
+      "name": "tampa_carbono",
+      "bounds_mm": [
+        -52.0,
+        -42.0,
+        25.997,
+        52.0,
+        42.0,
+        28.403
+      ],
+      "status": "from mechanical v0.1.0; openings not recut"
+    },
+    {
+      "name": "difusor_rgb_base",
+      "bounds_mm": [
+        -51.9,
+        -41.9,
+        1.45,
+        51.9,
+        41.9,
+        2.55
+      ],
+      "status": "previous envelope"
+    },
+    {
+      "name": "pcb_main_v0_3",
+      "bounds_mm": [
+        -49.0,
+        -39.0,
+        12.6,
+        49.0,
+        39.0,
+        14.11
+      ],
+      "status": "KiCad board solid; placement-only circuit"
+    },
+    {
+      "name": "pcb_ui_v0_3",
+      "bounds_mm": [
+        -49.0,
+        -39.0,
+        20.399,
+        49.0,
+        39.0,
+        21.911
+      ],
+      "status": "KiCad board solid; six key nets routed"
+    },
+    {
+      "name": "battery",
+      "bounds_mm": [
+        -48.001,
+        -26.001,
+        2.999,
+        12.001,
+        10.001,
+        10.001
+      ],
+      "status": "60x36x7 mm reserved cell"
+    },
+    {
+      "name": "battery_positive",
+      "bounds_mm": [
+        -47.157,
+        -14.35,
+        9.887,
+        -37.799,
+        -7.65,
+        12.887
+      ],
+      "status": "old wire envelope; connector unspecified"
+    },
+    {
+      "name": "battery_negative",
+      "bounds_mm": [
+        -47.111,
+        -16.35,
+        9.868,
+        -36.799,
+        -9.65,
+        12.887
+      ],
+      "status": "old wire envelope; connector unspecified"
+    },
+    {
+      "name": "SW1_Kailh_body",
+      "bounds_mm": [
+        -40.5,
+        13.0,
+        21.91,
+        -25.5,
+        28.0,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW2_Kailh_body",
+      "bounds_mm": [
+        -20.5,
+        13.0,
+        21.91,
+        -5.5,
+        28.0,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW3_Kailh_body",
+      "bounds_mm": [
+        -0.5,
+        13.0,
+        21.91,
+        14.5,
+        28.0,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW4_Kailh_body",
+      "bounds_mm": [
+        -40.5,
+        -7.5,
+        21.91,
+        -25.5,
+        7.5,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW5_Kailh_body",
+      "bounds_mm": [
+        -20.5,
+        -7.5,
+        21.91,
+        -5.5,
+        7.5,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW6_Kailh_body",
+      "bounds_mm": [
+        -0.5,
+        -7.5,
+        21.91,
+        14.5,
+        7.5,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW7_Kailh_body",
+      "bounds_mm": [
+        -40.5,
+        -28.0,
+        21.91,
+        -25.5,
+        -13.0,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW8_Kailh_body",
+      "bounds_mm": [
+        -20.5,
+        -28.0,
+        21.91,
+        -5.5,
+        -13.0,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "SW9_Kailh_body",
+      "bounds_mm": [
+        -0.5,
+        -28.0,
+        21.91,
+        14.5,
+        -13.0,
+        28.31
+      ],
+      "status": "Kailh Choc V2 package envelope; no cap/actuator STEP"
+    },
+    {
+      "name": "keycaps_9_reserva",
+      "bounds_mm": [
+        -42.2,
+        -29.7,
+        26.8,
+        16.2,
+        29.7,
+        29.6
+      ],
+      "status": "mechanical v0.1.0 reserve; catalog fit unvalidated"
+    },
+    {
+      "name": "biometria_reserva",
+      "bounds_mm": [
+        25.497,
+        -36.5,
+        25.497,
+        45.503,
+        -16.5,
+        27.503
+      ],
+      "status": "mechanical v0.1.0 reserve; catalog fit unvalidated"
+    },
+    {
+      "name": "fader_comando_reserva",
+      "bounds_mm": [
+        32.25,
+        -2.0,
+        27.1,
+        38.75,
+        6.0,
+        29.1
+      ],
+      "status": "mechanical v0.1.0 reserve; catalog fit unvalidated"
+    },
+    {
+      "name": "mute_comando_reserva",
+      "bounds_mm": [
+        33.5,
+        27.0,
+        26.8,
+        37.5,
+        31.0,
+        28.8
+      ],
+      "status": "mechanical v0.1.0 reserve; catalog fit unvalidated"
+    },
+    {
+      "name": "botao_camada",
+      "bounds_mm": [
+        -16.0,
+        32.9,
+        28.2,
+        -10.0,
+        35.9,
+        29.0
+      ],
+      "status": "mechanical v0.1.0 reserve; catalog fit unvalidated"
+    },
+    {
+      "name": "botao_gravacao",
+      "bounds_mm": [
+        6.499,
+        32.4,
+        28.199,
+        10.501,
+        36.4,
+        29.001
+      ],
+      "status": "mechanical v0.1.0 reserve; catalog fit unvalidated"
+    },
+    {
+      "name": "MCU_LQFP144",
+      "bounds_mm": [
+        -10.0,
+        -10.0,
+        14.11,
+        10.0,
+        10.0,
+        15.51
+      ],
+      "status": "package 20x20x1.4; pins unassigned"
+    },
+    {
+      "name": "audio_codec_VQFN24",
+      "bounds_mm": [
+        -24.0,
+        -20.0,
+        14.11,
+        -20.0,
+        -16.0,
+        15.11
+      ],
+      "status": "package envelope; pad pattern to verify"
+    },
+    {
+      "name": "headphone_amp_WQFN16",
+      "bounds_mm": [
+        -31.5,
+        -30.5,
+        14.11,
+        -28.5,
+        -27.5,
+        14.91
+      ],
+      "status": "package envelope; pad pattern to verify"
+    },
+    {
+      "name": "microSD_DM3AT",
+      "bounds_mm": [
+        -50.975,
+        7.075,
+        14.11,
+        -35.025,
+        20.925,
+        15.79
+      ],
+      "status": "supplier dimensions; orientation/nose must be reviewed"
+    },
+    {
+      "name": "P2_SJ3523",
+      "bounds_mm": [
+        -49.0,
+        -23.5,
+        14.11,
+        -40.0,
+        -12.5,
+        19.11
+      ],
+      "status": "supplier body envelope; centre is 2.41 mm high vs case opening"
+    },
+    {
+      "name": "USB_C_USB4105",
+      "bounds_mm": [
+        -4.5,
+        35.2,
+        14.11,
+        4.5,
+        41.2,
+        17.31
+      ],
+      "status": "candidate body envelope; vendor 3D not checked"
+    },
+    {
+      "name": "FFC24_main_socket",
+      "bounds_mm": [
+        -40.175,
+        30.125,
+        14.11,
+        -19.825,
+        36.875,
+        16.11
+      ],
+      "status": "Amphenol F32R 24way candidate courtyard envelope"
+    },
+    {
+      "name": "FFC24_ui_socket",
+      "bounds_mm": [
+        -40.175,
+        30.125,
+        18.4,
+        -19.825,
+        36.875,
+        20.4
+      ],
+      "status": "same candidate, underside; orientation under review"
+    },
+    {
+      "name": "FFC24_cable_envelope",
+      "bounds_mm": [
+        -36.25,
+        30.6,
+        16.1,
+        -23.75,
+        36.4,
+        18.4
+      ],
+      "status": "24-conductor 0.5mm-pitch cable bend reservation only"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_mpn": "F32R-1A7H1-11024",
+  "pitch_mm": 0.5,
+  "board_connector_centres_mm": {
+    "main": [
+      -30,
+      33.5
+    ],
+    "ui": [
+      -30,
+      33.5
+    ]
+  },
+  "pins": {
+    "1": "KEY1",
+    "2": "KEY2",
+    "3": "KEY3",
+    "4": "KEY4",
+    "5": "KEY5",
+    "6": "KEY6",
+    "7": "KEY7",
+    "8": "KEY8",
+    "9": "KEY9",
+    "10": "LAYER",
+    "11": "RECORD",
+    "12": "MUTE_SENSE",
+    "13": "FADER_ADC",
+    "14": "3V3_UI",
+    "15": "GND",
+    "16": "GND",
+    "17": "MUTE_HW_EN",
+    "18": "BIO_UART_TX",
+    "19": "BIO_UART_RX",
+    "20": "BIO_RESET",
+    "21": "LED_LAYER_1",
+    "22": "LED_LAYER_2",
+    "23": "LED_LAYER_3",
+    "24": "LED_RECORD"
+  },
+  "note": "Electrical allocation only. Physical mute signal is a proposed direct hardware enable, not a verified circuit. RGB stays on the main/base. Cable orientation, supply current and bend unvalidated."
+}
