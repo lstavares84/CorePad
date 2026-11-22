@@ -18,3 +18,4 @@ __pycache__/
 .codex/
 .codex-attachments/
 .claude/settings.local.json
+development/firmware/build/

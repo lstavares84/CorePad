@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "CorePad") (type "KiCad") (uri "${KIPRJMOD}/CorePad.kicad_sym") (options "") (descr "CorePad passive harness symbols")))

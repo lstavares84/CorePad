@@ -84,3 +84,5 @@ Em 22/11/2026, a faixa RGB foi incorporada ao modelo Blender em uma nova revisã
 ## Design Beta 1.0.0
 
 Em 22/11/2026, foi criada a Beta 1.0.0 como linha visual separada. Ela preserva a geometria funcional da Alpha 1.3.0, remove o filete e o canal verdes da tampa, aplica trama procedural de fibra de carbono preta à carcaça e mantém a faixa RGB somente na base. A trama é uma simulação visual; material, acabamento e processo construtivo reais continuam sujeitos a engenharia e validação.
+
+Em seguida, o usuário escolheu seguir com a Beta e solicitou desenvolvimento de PCB, software, peças plásticas e BOM. O pacote `development/` inicia essas frentes. A proposta de construção usa estrutura plástica isolante com acabamento em aparência de carbono; essa solução de processo é de engenharia e ainda não constitui escolha final do usuário sobre material ou fabricação. A escolha visual da Beta permanece firmada.

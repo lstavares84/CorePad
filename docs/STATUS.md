@@ -12,10 +12,18 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 |---|---|---|
 | Produto | Especificação 0.7 | Vigente; contém decisões e pendências explícitas |
 | Visual/mecânica | Beta 1.0.0 | Carbono e RGB modelados; material, difusor e fabricação não validados |
-| Eletrônica | 0.1.0 | Estudo preliminar; sem esquema completo ou trilhas |
-| Firmware | — | Não iniciado |
-| Aplicativo/configuração | — | Não iniciado |
+| Eletrônica | 0.2.0 em development/ | Interface de bancada com esquema/redes; principal ainda sem esquema completo ou trilhas |
+| Firmware | Núcleo C11 inicial | Estados testados; drivers, USB, áudio e segurança pendentes |
+| Aplicativo/configuração | Configurador desktop inicial | Editor JSON e simulador; transporte USB pendente |
 | Protótipo físico | — | Não iniciado |
+
+## Desenvolvimento integrado após escolha da Beta
+
+O proprietário escolheu seguir com a Beta em fibra de carbono em 22/11/2026. A entrega em `development/` acrescenta um núcleo C11 com estados do cartão/camadas/RGB, compilado para Cortex-M33 e testado em host; um configurador desktop Python com importação/exportação JSON e simulador; um escritor RF64 de referência; um esquema KiCad de interface de bancada com 44 pinos conferidos contra a PCB; e cinco peças plásticas volumétricas em STL/Blender. A BOM por bloco está em `development/hardware/v0.2.0/BOM.md`.
+
+A interface de bancada tem ERC limpo e 29 conexões ainda não roteadas. Ela usa chicotes para switches externos e não substitui a placa final. A principal ainda precisa de esquema completo. O firmware de dispositivo, transporte USB, drivers de áudio/cartão e segurança ainda não foram integrados. As peças mecânicas precisam de suportes, fixações, retenções e validação de componentes reais. Protótipo físico continua não iniciado.
+
+Evidências e limites: `development/VALIDATION.md`. Próximo avanço: pinagem simultânea, seleção da biometria segura e bancada MCU + áudio + SD antes da liberação das placas finais.
 
 ## O que já existe
 

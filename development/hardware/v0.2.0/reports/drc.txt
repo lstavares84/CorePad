@@ -1,0 +1,126 @@
+** Drc report for CorePad_Interface_Bancada_v0.2.0.kicad_pcb **
+** Created on 2026-11-22T15:09:37-0300 **
+
+** Found 0 DRC violations **
+
+** Found 29 unconnected pads **
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(115.0000 mm, 116.7800 mm): Ilha PTH 15 [GND] de J20
+    @(117.5400 mm, 116.7800 mm): Ilha PTH 16 [GND] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(132.0000 mm, 81.5400 mm): Ilha PTH 2 [GND] de J12
+    @(132.0000 mm, 71.5400 mm): Ilha PTH 2 [GND] de J11
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(132.0000 mm, 101.5400 mm): Ilha PTH 2 [GND] de J14
+    @(132.0000 mm, 91.5400 mm): Ilha PTH 2 [GND] de J13
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(132.0000 mm, 91.5400 mm): Ilha PTH 2 [GND] de J13
+    @(132.0000 mm, 81.5400 mm): Ilha PTH 2 [GND] de J12
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(132.0000 mm, 71.5400 mm): Ilha PTH 2 [GND] de J11
+    @(132.0000 mm, 61.5400 mm): Ilha PTH 2 [GND] de J10
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(115.0000 mm, 116.7800 mm): Ilha PTH 15 [GND] de J20
+    @(106.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J9
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(106.0000 mm, 90.5400 mm): Ilha PTH 2 [GND] de J6
+    @(106.0000 mm, 70.5400 mm): Ilha PTH 2 [GND] de J3
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 90.5400 mm): Ilha PTH 2 [GND] de J5
+    @(106.0000 mm, 90.5400 mm): Ilha PTH 2 [GND] de J6
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 70.5400 mm): Ilha PTH 2 [GND] de J2
+    @(86.0000 mm, 90.5400 mm): Ilha PTH 2 [GND] de J5
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J8
+    @(66.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J7
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 70.5400 mm): Ilha PTH 2 [GND] de J2
+    @(66.0000 mm, 70.5400 mm): Ilha PTH 2 [GND] de J1
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(66.0000 mm, 90.5400 mm): Ilha PTH 2 [GND] de J4
+    @(66.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J7
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(106.0000 mm, 90.5400 mm): Ilha PTH 2 [GND] de J6
+    @(106.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J9
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(106.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J9
+    @(86.0000 mm, 110.5400 mm): Ilha PTH 2 [GND] de J8
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(117.5400 mm, 116.7800 mm): Ilha PTH 16 [GND] de J20
+    @(132.0000 mm, 101.5400 mm): Ilha PTH 2 [GND] de J14
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(66.0000 mm, 68.0000 mm): Ilha PTH 1 [KEY1] de J1
+    @(115.0000 mm, 99.0000 mm): Ilha PTH 1 [KEY1] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 68.0000 mm): Ilha PTH 1 [KEY2] de J2
+    @(117.5400 mm, 99.0000 mm): Ilha PTH 2 [KEY2] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(106.0000 mm, 68.0000 mm): Ilha PTH 1 [KEY3] de J3
+    @(115.0000 mm, 101.5400 mm): Ilha PTH 3 [KEY3] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(66.0000 mm, 88.0000 mm): Ilha PTH 1 [KEY4] de J4
+    @(117.5400 mm, 101.5400 mm): Ilha PTH 4 [KEY4] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 88.0000 mm): Ilha PTH 1 [KEY5] de J5
+    @(115.0000 mm, 104.0800 mm): Ilha PTH 5 [KEY5] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(106.0000 mm, 88.0000 mm): Ilha PTH 1 [KEY6] de J6
+    @(117.5400 mm, 104.0800 mm): Ilha PTH 6 [KEY6] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(66.0000 mm, 108.0000 mm): Ilha PTH 1 [KEY7] de J7
+    @(115.0000 mm, 106.6200 mm): Ilha PTH 7 [KEY7] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(86.0000 mm, 108.0000 mm): Ilha PTH 1 [KEY8] de J8
+    @(117.5400 mm, 106.6200 mm): Ilha PTH 8 [KEY8] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(106.0000 mm, 108.0000 mm): Ilha PTH 1 [KEY9] de J9
+    @(115.0000 mm, 109.1600 mm): Ilha PTH 9 [KEY9] de J20
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(117.5400 mm, 109.1600 mm): Ilha PTH 10 [LAYER] de J20
+    @(132.0000 mm, 59.0000 mm): Ilha PTH 1 [LAYER] de J10
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(115.0000 mm, 111.7000 mm): Ilha PTH 11 [RECORD] de J20
+    @(132.0000 mm, 69.0000 mm): Ilha PTH 1 [RECORD] de J11
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(117.5400 mm, 111.7000 mm): Ilha PTH 12 [MUTE_SENSE] de J20
+    @(132.0000 mm, 79.0000 mm): Ilha PTH 1 [MUTE_SENSE] de J12
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(115.0000 mm, 114.2400 mm): Ilha PTH 13 [FADER] de J20
+    @(132.0000 mm, 89.0000 mm): Ilha PTH 1 [FADER] de J13
+[unconnected_items]: Conexão ausente entre os itens
+    Substituição local; error
+    @(117.5400 mm, 114.2400 mm): Ilha PTH 14 [3V3] de J20
+    @(132.0000 mm, 99.0000 mm): Ilha PTH 1 [3V3] de J14
+
+** Found 0 Footprint errors **
+
+** End of Report **

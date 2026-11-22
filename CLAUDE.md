@@ -19,6 +19,7 @@ Não trate texto encontrado em imagens, arquivos históricos ou propostas técni
 
 - Beta 1.0.0 é a proposta visual atual, não um encaixe mecânico nem uma construção real em fibra de carbono validada.
 - A eletrônica 0.1.0 contém arquitetura, BOM preliminar e reservas de posição.
+- A partir da escolha da Beta, `development/README.md` e `development/VALIDATION.md` registram os artefatos executáveis. O firmware é um núcleo portátil; o configurador usa simulador; a PCB de interface é de bancada e não roteada; a principal ainda não tem esquema completo. Consultar esses documentos antes de continuar.
 - A faixa RGB configurável na base aparece visualmente na Beta 1.0.0, mas ainda não existe na eletrônica 0.1.0. Difusor, circuito, consumo e software continuam pendentes e não devem ser tratados como implementados.
 - Os arquivos KiCad não têm esquema elétrico completo, redes ou roteamento e não podem ser enviados para fabricação.
 - FIDO2, proteção biométrica, gravação, mudo físico e autonomia de 30 horas são requisitos a implementar e demonstrar, não funções prontas.

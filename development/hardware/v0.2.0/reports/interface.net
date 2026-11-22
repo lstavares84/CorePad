@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/lstavares84/Documentos/ChatGPT/Gadgets/development/hardware/v0.2.0/CorePad_Interface_Bancada_v0.2.0.kicad_sch</source>
+    <date>2026-11-22T15:09:36-0300</date>
+    <tool>Eeschema 9.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>CorePad_Interface_Bancada_v0.2.0.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Interface_J1</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c7750ed-9622-5bf0-a7ec-7a4ef00a6c50</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Interface_J2</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>004052ca-5787-5600-b65e-48b82a85e81d</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Interface_J3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f1e2e37-dfb9-5e22-898b-b3969f0c96ae</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Interface_J4</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89cdcdc4-1fcf-5a1d-a6cf-3eac72bf6044</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Interface_J5</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>107c8f3b-b9ea-5e4f-8cc0-0d2a58a35df4</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Interface_J6</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a3a6485-7ab8-54d0-8083-e852366518d2</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Interface_J7</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d190663d-deef-52b3-a694-3bf9f2b3c0b0</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Interface_J8</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fafef648-f62a-554e-a1d4-3dac89862660</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>Interface_J9</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>960d5059-3372-50d2-8fd1-68091adc40df</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>Interface_J10</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5de880af-fc3e-55bc-9868-98fac7c9bf0b</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>Interface_J11</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6936275a-8f2a-53a5-b685-4f73b1ab5b16</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>Interface_J12</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9443d73-eaac-5c46-a4f5-bbeed5af12b9</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>Interface_J13</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c0ee9ee-5833-549d-a5af-cea147e17b61</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>Interface_J14</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>57521147-2d77-5549-9814-a4292ef8d69f</tstamps>
+    </comp>
+    <comp ref="J20">
+      <value>Interface_J20</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CorePad" part="Header16" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CorePad_Interface_Bancada_v0.2.0.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08cee197-31b6-5b99-b2e2-3e760a84c060</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CorePad" part="Header16">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Header16</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CorePad" part="Header2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Header2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CorePad">
+      <uri>/home/lstavares84/Documentos/ChatGPT/Gadgets/development/hardware/v0.2.0/CorePad.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3" class="Default">
+      <node ref="J14" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="14" pinfunction="Pin_14" pintype="passive"/>
+    </net>
+    <net code="2" name="/FADER" class="Default">
+      <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="13" pinfunction="Pin_13" pintype="passive"/>
+    </net>
+    <net code="3" name="/GND" class="Default">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J10" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J11" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J12" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J13" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J14" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J20" pin="15" pinfunction="Pin_15" pintype="passive"/>
+      <node ref="J20" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J9" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="4" name="/KEY1" class="Default">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/KEY2" class="Default">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="6" name="/KEY3" class="Default">
+      <node ref="J20" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="7" name="/KEY4" class="Default">
+      <node ref="J20" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="8" name="/KEY5" class="Default">
+      <node ref="J20" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="9" name="/KEY6" class="Default">
+      <node ref="J20" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="10" name="/KEY7" class="Default">
+      <node ref="J20" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="11" name="/KEY8" class="Default">
+      <node ref="J20" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="12" name="/KEY9" class="Default">
+      <node ref="J20" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="J9" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="13" name="/LAYER" class="Default">
+      <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="10" pinfunction="Pin_10" pintype="passive"/>
+    </net>
+    <net code="14" name="/MUTE_SENSE" class="Default">
+      <node ref="J12" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="12" pinfunction="Pin_12" pintype="passive"/>
+    </net>
+    <net code="15" name="/RECORD" class="Default">
+      <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J20" pin="11" pinfunction="Pin_11" pintype="passive"/>
+    </net>
+  </nets>
+</export>

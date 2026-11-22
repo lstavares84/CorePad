@@ -1,0 +1,32 @@
+[
+  {
+    "part": "Base_plastica",
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 33546.62618248575
+  },
+  {
+    "part": "Tampa_carbono",
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 11004.391623313111
+  },
+  {
+    "part": "Difusor_RGB",
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 844.5806313457356
+  },
+  {
+    "part": "Botao_camada",
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 13.404853640372426
+  },
+  {
+    "part": "Botao_gravacao",
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 10.036955175615272
+  }
+]
