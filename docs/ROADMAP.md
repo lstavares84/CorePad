@@ -12,6 +12,7 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 - [ ] Testar USB Audio simultâneo com escrita SDMMC/microSD.
 - [ ] Gravar arquivo longo, medir pausas máximas e verificar recuperação após falha.
 - [ ] Medir consumo por bloco e revisar bateria/meta de 30 horas.
+- [ ] Dimensionar a faixa RGB da base, seu difusor e consumo por brilho/cor.
 - [ ] Prototipar o mudo físico e confirmar que o P2 continua ativo.
 - [ ] Escolher caminho de biometria com comunicação autenticada ou mitigação equivalente.
 
@@ -37,6 +38,7 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 - [ ] Importar modelos 3D certificados dos componentes selecionados.
 - [ ] Fechar empilhamento, tolerâncias, fixações, bateria, dutos acústicos e acesso aos conectores.
 - [ ] Atualizar a Alpha em nova versão, preservando 1.2.0.
+- [ ] Modelar a faixa RGB no perímetro inferior, com emissão difusa para a mesa e sem iluminação sob as teclas.
 - [ ] Posicionar e rotear PCB com stack-up do fabricante.
 - [ ] Executar DRC, revisão de retorno de corrente, USB, áudio, energia e segurança.
 - [ ] Gerar pacote de fabricação somente após aprovação explícita.
@@ -49,6 +51,7 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 
 - [ ] Boot seguro, atualização assinada e recuperação de desenvolvimento.
 - [ ] Teclado USB, camadas, LEDs e configuração persistente.
+- [ ] Configuração de cor e desligamento da faixa RGB pelo software, sem recompilar o firmware.
 - [ ] Áudio USB, P2, microfones e mudo físico.
 - [ ] Estados exclusivos Arquivos/Gravação e fechamento robusto do arquivo.
 - [ ] Medição de energia e encerramento seguro em bateria baixa.
@@ -65,6 +68,7 @@ Este roteiro organiza a evolução do CorePad por evidências. Datas e compras d
 - [ ] CTAP/FIDO2 com confirmação física e testes entre sistemas.
 - [ ] Fluxo de textos longos e português/acentos em Windows e macOS.
 - [ ] Ferramenta de configuração sem recompilar firmware.
+- [ ] Interface de escolha da cor da faixa RGB e persistência da preferência no aparelho.
 - [ ] Exportação de gravações para transcrição e ata.
 
 **Critério de saída:** testes de segurança e interoperabilidade documentados, sem credenciais reais antes da aprovação.

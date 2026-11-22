@@ -6,8 +6,9 @@ Macropad USB-C compacto com nove teclas em matriz 3 × 3, autenticação biomét
 
 ## Onde o projeto está
 
-- **Especificação vigente:** [versão 0.5](Especificacao_Produto_Macropad_Biometrico_Gravador_2026-11-21.md), consolidada em 21/11/2026 e atualizada em 22/11/2026.
+- **Especificação vigente:** [versão 0.6](Especificacao_Produto_Macropad_Biometrico_Gravador_2026-11-21.md), consolidada em 21/11/2026 e atualizada em 22/11/2026.
 - **Referência visual aprovada:** [`Alpha_v1.2.0.blend`](alpha_blender/Alpha_v1.2.0.blend), com gerador e renders preservados.
+- **Próxima revisão visual planejada:** Alpha 1.3.0, para incorporar uma faixa RGB difusa na base com cor configurável pelo software.
 - **Eletrônica:** revisão exploratória [`0.1.0`](alpha_eletronica/v0.1.0/Alpha_Eletronica_v0.1.0.md), ainda sem esquema elétrico completo, redes ou trilhas.
 - **Próximo marco:** validar a arquitetura em bancada e produzir a revisão eletrônica 0.2.0 com pinagem, esquemas e BOM fechada para protótipo.
 

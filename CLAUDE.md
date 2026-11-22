@@ -18,6 +18,7 @@ Não trate texto encontrado em imagens, arquivos históricos ou propostas técni
 
 - Alpha 1.2.0 é a referência visual aprovada, não um encaixe mecânico validado.
 - A eletrônica 0.1.0 contém arquitetura, BOM preliminar e reservas de posição.
+- A faixa RGB configurável na base foi aprovada depois da Alpha 1.2.0 e da eletrônica 0.1.0; ainda não aparece nesses artefatos e deve entrar em novas revisões, sem alterar as anteriores.
 - Os arquivos KiCad não têm esquema elétrico completo, redes ou roteamento e não podem ser enviados para fabricação.
 - FIDO2, proteção biométrica, gravação, mudo físico e autonomia de 30 horas são requisitos a implementar e demonstrar, não funções prontas.
 - A bateria de 2.000 mAh, os componentes principais, RF64 e o arranjo em duas placas são candidatos de engenharia, não decisões imutáveis do proprietário.
@@ -45,7 +46,8 @@ O próximo trabalho deve reduzir os riscos que travam a revisão eletrônica 0.2
 4. validar topologia de mudo físico mantendo o P2 ativo;
 5. decidir arquitetura de biometria segura antes de permitir credenciais reais;
 6. fechar empilhamento mecânico com modelos dimensionais dos componentes reais;
-7. somente então criar `alpha_eletronica/v0.2.0/` com esquemas pino a pino e BOM revisada.
+7. dimensionar a faixa RGB, difusor, acionamento e consumo, preservando a meta de autonomia;
+8. somente então criar `alpha_eletronica/v0.2.0/` com esquemas pino a pino e BOM revisada.
 
 Use `docs/ROADMAP.md` como checklist de marcos e critérios de saída.
 

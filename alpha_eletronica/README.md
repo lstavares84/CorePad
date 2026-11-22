@@ -9,3 +9,5 @@ Abra `v0.1.0/Alpha_Eletronica_v0.1.0.md` para consultar as decisões, componente
 O pedido de autonomia foi incorporado: alimentação USB-C e bateria interna, com meta de pelo menos 30 horas de gravação ambiente, referenciada no Plaud Note original. A autonomia depende de medição em protótipo.
 
 Versões eletrônicas seguem MAJOR.MINOR.PATCH separadamente do Blender. Não sobrescrever revisões entregues. A revisão 0.1.0 contém proposta de arquitetura, BOM preliminar, orçamento energético, interligações funcionais, estudo de posicionamento e plano de validação. Não contém firmware nem placa funcional.
+
+Após o fechamento da 0.1.0, o usuário aprovou uma faixa RGB difusa no perímetro inferior da base, com cor configurável pelo software. A 0.1.0 não inclui essa carga. A revisão 0.2.0 deve dimensionar LEDs, difusor, acionamento, interferência e consumo por brilho/cor, mantendo separadas as indicações de camada e gravação e revalidando a meta de 30 horas.

@@ -16,4 +16,5 @@ __pycache__/
 # Preferências locais de agentes e IDEs; a orientação compartilhada fica em CLAUDE.md
 .agents/
 .codex/
+.codex-attachments/
 .claude/settings.local.json

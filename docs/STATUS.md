@@ -10,8 +10,8 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 
 | Área | Baseline | Situação |
 |---|---|---|
-| Produto | Especificação 0.5 | Vigente; contém decisões e pendências explícitas |
-| Visual/mecânica | Alpha 1.2.0 | Aparência aprovada; encaixe e fabricação não validados |
+| Produto | Especificação 0.6 | Vigente; contém decisões e pendências explícitas |
+| Visual/mecânica | Alpha 1.2.0 | Baseline aprovada; faixa RGB posterior ainda não modelada |
 | Eletrônica | 0.1.0 | Estudo preliminar; sem esquema completo ou trilhas |
 | Firmware | — | Não iniciado |
 | Aplicativo/configuração | — | Não iniciado |
@@ -20,6 +20,7 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 ## O que já existe
 
 - nove teclas 3 × 3, seletor de camadas, três LEDs, botão de gravação, biometria e controles representados no Blender;
+- decisão posterior de acrescentar faixa RGB difusa no perímetro inferior, com cor configurável pelo software;
 - vistas de revisão, geradores Python e validações JSON;
 - proposta de arquitetura com STM32U5A5, áudio dedicado, microSD, elemento seguro, bateria e carga;
 - BOM preliminar, estimativa de autonomia, interligações funcionais e reservas de posicionamento KiCad;
@@ -31,6 +32,7 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 - pinagem simultânea comprovada para todos os periféricos;
 - placa roteada, ERC/DRC de produção ou Gerbers;
 - firmware de teclado, áudio, armazenamento, segurança ou atualização;
+- modelo Alpha 1.3.0, difusor, circuito e controle de software da faixa RGB;
 - prova de autonomia, integridade de gravação longa ou transição segura Arquivos/Gravação;
 - cadeia biométrica autenticada e implementação CTAP/FIDO2;
 - empilhamento 3D com modelos certificados e tolerâncias de montagem;
@@ -46,6 +48,7 @@ O CorePad concluiu a fase de definição visual conceitual e iniciou a exploraç
 | 4 | mudo não interromper fisicamente toda a captação | Esquema fail-safe e medição com firmware travado |
 | 5 | peças reais não caberem no volume visual | Empilhamento 3D com modelos dimensionais e tolerâncias |
 | 6 | arquivo híbrido longo ser impraticável para transcrição | Teste RF64/exportação e fluxo de processamento definido |
+| 7 | faixa RGB reduzir a autonomia ou contaminar áudio/EMC | Orçamento por brilho, acionamento adequado e testes com gravação ativa |
 
 ## Próxima decisão de avanço
 
