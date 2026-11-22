@@ -1,0 +1,19 @@
+# Backups e temporários de ferramentas
+*.blend1
+*.blend2
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+__pycache__/
+*.pyc
+.DS_Store
+
+# O acervo histórico faz parte desta importação, inclusive backups Blender antigos.
+!archive/*.blend1
+!archive/**/*.blend1
+
+# Preferências locais de agentes e IDEs; a orientação compartilhada fica em CLAUDE.md
+.agents/
+.codex/
+.claude/settings.local.json

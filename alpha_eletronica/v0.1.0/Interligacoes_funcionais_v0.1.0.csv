@@ -1,0 +1,27 @@
+﻿Rede_grupo;Origem;Destino;Interface;Nivel;Observacao
+USB_D_P/N;USB-C J1;ESD e USB_HS U1;USB2 HS;3.3V PHY;"90 ohms diferencial; não roteado"
+USB_CC1/2;USB-C J1;TUSB320 U13;Controle USB-C;Conforme CC;"Limitação fonte; proteção e dead-battery a fechar"
+VBUS_5V;USB-C J1;BQ25622 U7;Energia;5V;Limite de entrada e proteção
+BAT;Bateria BAT1;BQ25622 U7 + MAX17048 U10;Energia;1S Li-ion;"Termistor na célula; proteção independente"
+SYS;BQ25622 U7;TPS63070 U8;Energia;Variável;Regulação 3V3 e teste de retirada USB
+3V3;TPS63070 U8;MCU cartão I/O biometria amplificador;Energia;3.3V;Domínios desligáveis e picos SD
+2V8_MIC;TPS7A20 U9;Polo A SW12;Energia;2.8V;Microfone nunca recebe 3.3 V
+3V3_AUDIO;3V3 filtrado;AVDD e IOVDD do TAC5112;Energia;3.3V;"AVDD do codec não aceita2.8V; filtragem a calcular"
+MIC_VDD;Polo A SW12;MIC1 MIC2;Energia interrompida fisicamente;2.8V/aberto;Mudo independente do programa
+MIC_L_P/N;MIC1;U4 e capacitores -> U2;Analógico diferencial;Conforme mic;Dutos acústicos selados e trilhas silenciosas
+MIC_R_P/N;MIC2;U5 e capacitores -> U2;Analógico diferencial;Conforme mic;Sem alimentação parasita
+MIC_ALLOW;Polo B SW12;U4 U5 + leitura protegida MCU;Comando físico;0/3.3V;"MCU só observa; padrão mudo"
+SAI_AUDIO;U1;U2;I2S/TDM MCLK BCLK FS TX RX;3.3V I/O;"Relógio comum e retorno USB; pinos a definir"
+LINE_L/R;U2;TPA6132A2 U3;Áudio de reprodução;Conforme datasheets;Acoplamento de entrada e ganho a calcular
+HP_L/R/GND;U3;J3 P2;Saída fone;Referenciada a GND;Nunca mutar junto aos microfones
+SDMMC;U1;J2 cartão;CLK CMD D0 D1 D2 D3 + CD;3.3V;"Sem UHS de1.8V nesta revisão; série/pull-ups a calcular"
+I2C_AUDIO;U1;U2;SCL SDA;3.3V;Pull-ups e endereços a confirmar
+I2C_POWER;U1;U7 U10 U13;SCL SDA + alertas;3.3V;Habilitação carga permanece segura durante reset
+I2C_SEC;Área segura U1;SE050 U6;SCL SDA EN;Conforme SE050;"Barramento dedicado; canal autenticado"
+BIO_UART;U1;BIO1;TX RX IRQ;3.3V;Somente bancada até segurança resolvida
+KEY1..9;SW1..9;U1;9 GPIO independentes;3.3V;"Sem diodos de matriz; filtragem temporal"
+AUX_INPUTS;SW10 SW11;U1;GPIO interrupção;3.3V;Início seguro e função de despertar
+LAYER_LED1..3;U1;LED1..3;GPIO + resistores;3.3V;Somente um aceso por camada
+REC_LED;U1;LED4;GPIO + resistor;3.3V;Indicador adicional proposto
+VOLUME;RV1;U1 ADC;Cursor filtrado;0..3.3V;"Volume de reprodução; gravação independente"
+SWD;Conector/pads de teste;U1;Programação;3.3V;"Protegido em produção; recuperação assinada"

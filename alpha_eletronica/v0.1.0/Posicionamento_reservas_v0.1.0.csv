@@ -1,0 +1,30 @@
+﻿Placa;Referencia;Descricao;X_mm;Y_mm;Largura_mm;Altura_mm;Grupo
+Principal;J1;USB-C;49;3;12;6;io
+Principal;PWR;Carga + 3V3;72;12;24;14;power
+Principal;J2;microSD;9;27;16;16;io
+Principal;AUDIO;Codec + mudo;28;29;18;20;audio
+Principal;U1;STM32U5A5;72;40;28;28;logic
+Principal;SEC;SE050;54;65;12;12;security
+Principal;HP;Amplificador;24;56;12;12;audio
+Principal;J3;P2;5;56;10;18;io
+Principal;MIC1;Mic E;4;9;6;6;audio
+Principal;MIC2;Mic D;94;9;6;6;audio
+Principal;LINK;Interface;77;71;22;7;logic
+Principal;BAT1;Bateria abaixo;42;44;64;40;battery
+Interface;SW1;1;16;18.5;19;19;key
+Interface;SW2;2;36;18.5;19;19;key
+Interface;SW3;3;56;18.5;19;19;key
+Interface;SW4;4;16;39;19;19;key
+Interface;SW5;5;36;39;19;19;key
+Interface;SW6;6;56;39;19;19;key
+Interface;SW7;7;16;59.5;19;19;key
+Interface;SW8;8;36;59.5;19;19;key
+Interface;SW9;9;56;59.5;19;19;key
+Interface;SW10;Camada;33.5;4.6;6;3;logic
+Interface;LED1;;41.8;4.6;1;1;led
+Interface;LED2;;44.3;4.6;1;1;led
+Interface;LED3;;46.8;4.6;1;1;led
+Interface;SW11;Gravar;57.5;4.6;4;4;logic
+Interface;SW12;Mudo;84.5;10;16;16;audio
+Interface;RV1;Volume;84.5;37;10;33;audio
+Interface;BIO1;Biometria;84.5;65.5;22;22;security

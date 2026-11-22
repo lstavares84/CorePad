@@ -1,0 +1,30 @@
+{
+  "revisao": "0.1.0",
+  "placas": [
+    {
+      "arquivo": "Alpha_Principal_v0.1.0.kicad_pcb",
+      "camadas": 4,
+      "trilhas": 0,
+      "footprints_com_pads": 1,
+      "reservas": 12,
+      "esquema_eletrico": false
+    },
+    {
+      "arquivo": "Alpha_Interface_v0.1.0.kicad_pcb",
+      "camadas": 2,
+      "trilhas": 0,
+      "footprints_com_pads": 0,
+      "reservas": 17,
+      "esquema_eletrico": false
+    }
+  ],
+  "teclas_reservadas": 9,
+  "leds_camada_reservados": 3,
+  "energia_util_cargas_Wh": 5.328,
+  "limite_30h_mW": 177.6,
+  "orcamento_mW": 150,
+  "horas_estimadas": 35.52,
+  "bom_linhas": 38,
+  "eletrica_validada": false,
+  "liberado_fabricacao": false
+}

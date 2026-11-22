@@ -1,0 +1,39 @@
+﻿Referencias;Quantidade;Funcao;Codigo_ou_familia;Fabricante;Formato;Situacao;Pendencia;Fonte_no_relatorio
+U1;1;Controle;STM32U5A5ZJT6Q;ST;LQFP144 20x20;Candidato principal;Pinagem e SMPS interno a validar;S03
+U2;1;Conversor áudio;TAC5112IRGER;TI;VQFN24 RGE0024R;Candidato principal;Desenho de soldagem específico ainda não implementado;S04
+U3;1;Amplificador P2;TPA6132A2RTER;TI;WQFN16;Candidato principal;"Ganho; acoplamento de entrada; carga real";S06
+MIC1 MIC2;2;Captação;IM73A135V01XTSA1;Infineon;MEMS 4x3x1.2;Candidato principal;Dutos acústicos e alimentação <=3.0 V;S05
+U4 U5;2;Mudo analógico;TS5A23157DGS(R);TI;VSSOP10;Família/embalagem a fechar;"Comutação em hardware; referência e transitórios";S14
+U6;1;Segurança;SE050C2HQ1/Z01SD;NXP;HX2QFN20;Candidato principal;"Provisionamento e canal autenticado; não é FIDO2 pronto";S08
+BIO1;1;Biometria bancada;4750;Adafruit;Módulo redondo 20.8 mm;Somente desenvolvimento;"Sem comprovação de canal autenticado; estoque pendente";S09
+U7;1;Carregador;BQ25622;TI;WQFN-HR18 2.5x3;"Família; sufixo a fechar";"CE bloqueado até configuração; termistor na célula";S10
+U8;1;Regulador principal 3V3;TPS63070RNMR;TI;VQFN-HR15;Candidato principal;"Indutor e estabilidade; consumo real; capacidade de pico SD";S23
+U9;1;Regulador microfones;TPS7A20 2.8 V;TI;Sufixo/encapsulamento a fechar;Família;"Somente cápsulas; codec AVDD 3.3V separado e filtrado";S24
+U10;1;Medidor bateria;MAX17048;Analog Devices;Sufixo/encapsulamento a fechar;Família;Caracterizar célula e estimativa de carga;S16
+U11 U12;2;Chaves alimentação;TPS22918DBVR;TI;SOT23-6;Candidatos;"Biometria e cartão; impedir alimentação parasita por sinais";S25
+U13;1;USB-C corrente;TUSB320;TI;X2QFN12;Família;"Somente consumidor; partida com bateria esgotada; CC protegido";S15
+DUSB1;1;Proteção USB dados;TPD2EUSB30;TI;Sufixo a fechar;Família;"Proteção próxima ao conector; avaliar clamping para MCU";S26
+J1;1;USB-C traseiro;USB4105-GF-A;GCT;16 contatos topo;Candidato mecânico;Comprimento de ancoragem e altura de centro a fechar;S20
+J2;1;Slot microSD;DM3AT-SF-PEJM5;Hirose;SMT;Candidato mecânico;"Esquerda; acesso e altura a resolver";S21
+J3;1;P2 estéreo;SJ-3523-SMT-TR;Same Sky;SMT angular TRS;Candidato mecânico;"Esquerda; somente saída; sem detecção de plugue nesta peça";S22
+SW1-SW9;9;Teclas rasas;CPG135301D01 Choc V2 Red;Kailh;Perfil baixo THT;Candidato mecânico;"Sem clique; tecla e curso precisam caber; padrão próprio a conferir";S19
+RV1;1;Deslizante vertical;PTA1543, 10 kohm linear;Bourns;THT curso 15 mm;Família;Comprimento da haste e código completo após empilhamento;S18
+SW12;1;Chave mudo;7201, DPDT ON-ON;C&K / Littelfuse;Alavanca painel;Família;Selecionar contatos para baixa corrente e haste curta;S13
+SW10 SW11;2;Camada / gravador;A definir;A definir;Tátil baixo perfil;Pendente;Reserva 6x3 e diâmetro4 refere-se à tampa, não ao corpo da peça;Projeto
+LED1-LED3;3;Camadas;Verde de alta eficiência;A definir;0402 ou 0603;Pendente;"0.1 a 0.3 mA inicial; guia óptico; brilho a ensaiar";Projeto
+LED4;1;Estado gravador;Verde de alta eficiência;A definir;0402 ou 0603;Proposta nova;"Ponto discreto no botão; preservar 3 LEDs só para camadas";Projeto
+BAT1;1;Bateria referência;"2011; 3.7 V 2000 mAh";Adafruit;60x36x7 mm;Referência de bancada;"Pacote protegido; validar ficha real e termistor externo";S02
+TH1;1;Temperatura bateria;"NTC 10 kohm; curva a fechar";A definir;Em contato com célula;Pendente;"Rede TS calculada para curva real; não simular temperatura por resistor fixo";Projeto
+J4;1;Conector bateria;"Polarizado com trava; a definir";A definir;PCB/cabo;Pendente;Polaridade e corrente conferidas com pacote real;Projeto
+J5 J6;2;Interligação interface;A definir;A definir;FFC ou placa a placa;Pendente;"Número de vias; altura; retenção; aterramento";Projeto
+Y1;1;Relógio principal;A definir conforme ST;A definir;SMD;Pendente;"Tolerância USB e áudio; não fixar carga capacitiva sem peça";S03
+Y2;1;Relógio calendário;"32768 Hz; a definir";A definir;SMD;Pendente;"Carga e partida; sincronizar calendário por USB";S03
+L*;A definir;Indutores;Conforme U1 U7 U8;A definir;Blindados;Pendente;Valor corrente saturação perdas e corrente eficaz pelo cálculo;Projeto
+R*;A definir;Resistores;1% ou melhor conforme função;A definir;0402/0603;Pendente;"Pull-ups; feedback; LEDs; limitação e termistor";Projeto
+C*;A definir;Capacitores;Conforme circuitos;A definir;MLCC/baixa distorção;Pendente;"Valor efetivo com tensão DC; desacoplamento e áudio";Projeto
+ESD*;A definir;Proteções adicionais;CC VBUS P2 microSD controles;A definir;A definir;Pendente;"Tensão clamping; capacitância; sobrevoltagem; descarga";Projeto
+TP*;A definir;Pontos de ensaio;SWD reset energia áudio;Projeto;Pads de teste;Pendente;"Acesso bancada; isolamento de correntes por domínio";Projeto
+CARD1;1;Cartão;"microSDXC até256GB; homologar";A definir;Removível;Pendente;"Consumo médio/pico; latência; resistência a perda de energia";Projeto
+PCB1;1;Placa principal;"98x78 mm; 4 camadas referência";Projeto;Espessura a fechar;Estudo;"Sem esquema nem trilhas; NÃO FABRICAR";Projeto
+PCB2;1;Placa de interface;"98x78 mm; 2 camadas referência";Projeto;Espessura a fechar;Estudo;"Reservas sem terminais; NÃO FABRICAR";Projeto
+MEC*;A definir;Peças mecânicas;"Teclas; dutos; isolação; fixação";Projeto/catálogo;A definir;Pendente;"Célula sem compressão; acústica e força das teclas";Projeto

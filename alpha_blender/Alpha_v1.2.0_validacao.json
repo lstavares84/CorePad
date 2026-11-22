@@ -1,0 +1,25 @@
+{
+  "versao": "1.2.0",
+  "teclas_macro": 9,
+  "leds_camadas": 3,
+  "estados_leds_testados": [
+    [
+      2.5,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      2.5,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      2.5
+    ]
+  ],
+  "furos_passantes_laterais": 8,
+  "botoes_auxiliares": 2,
+  "resultado": "Geometria e estados ilustrativos conferidos; captação e firmware não implementados."
+}

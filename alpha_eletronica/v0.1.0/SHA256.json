@@ -1,0 +1,15 @@
+{
+  "Alpha_Eletronica_v0.1.0.md": "b4a2171c0f0ddb6388edc150be5ded7f0a6d16a988e0f73968b906bf27d78818",
+  "Alpha_Interface_v0.1.0.kicad_pcb": "aca38a6315958ed6737741ba9aaa4d45407a30b1e51e03f835233564ca3c3d24",
+  "Alpha_Interface_v0.1.0.kicad_pro": "af25a1e6a601cb8a1302266dbf266518fc38fa7d9b3e13b7e4d8079f4ceb9002",
+  "Alpha_Posicionamento_v0.1.0.png": "5242c96e476b71ca4b06d9d86a78f91ca1b6df9e6a141730e755b753fa32ef29",
+  "Alpha_Posicionamento_v0.1.0.svg": "8078e6cdf77021074c4e20bbdc8a2fa672a7103f2f1e5446d52b236b3df44a3a",
+  "Alpha_Principal_v0.1.0.kicad_pcb": "d7be9a476b4b3d7cf50058c976bccbdbd37ef65860e55b92c92f1cd5bb7a5569",
+  "Alpha_Principal_v0.1.0.kicad_pro": "d21f1b20418851c050ab69597fa86b12f003c5b9e17c732fbeff4df33d8e3cd1",
+  "Autonomia_cenarios_v0.1.0.csv": "2e22afd3bd08fa87a516bf7c7a933d3f38a79b9c8b7719a9dfe821a9fad47133",
+  "BOM_Alpha_v0.1.0.csv": "9f2e425a307119710721ca3ccea1b7dd54bbaf6504065803e8c4212107f5f825",
+  "Interligacoes_funcionais_v0.1.0.csv": "cc5374ceee2c98c5f2f8ebc7345dd7f2f491e6d72610712dcfd1745a3194327f",
+  "Posicionamento_reservas_v0.1.0.csv": "6936f197146e629f33f196ff04db0f8e0bb22b5a819013a95a93042a490082fa",
+  "Verificacao_v0.1.0.json": "09d8f0ac07ed347f645f4e6403f82030a8170bc72e3ac36b23112173841e5f86",
+  "gerar_estudo.py": "7c7266426c698efbb366fc6a803ce1e621f4b57a0a46b82769db5b5556f0547a"
+}

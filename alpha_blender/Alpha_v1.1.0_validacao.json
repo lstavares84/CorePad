@@ -1,0 +1,14 @@
+{
+  "versao": "1.1.0",
+  "teclas_macro": 9,
+  "seletores_camadas": 1,
+  "centro_carcaca_z_mm": 7.85,
+  "centros_conectores_z_mm": {
+    "P2 | anel metálico aberto": 7.850001,
+    "microSD | boca metálica": 7.850001,
+    "USB-C | blindagem com abertura oval": 7.850001
+  },
+  "pares_verificados": 23,
+  "intersecoes": [],
+  "escopo": "Posição e interfaces externas alteradas; sem validação elétrica ou de fabricação."
+}
