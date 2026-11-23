@@ -7,6 +7,7 @@ A linha escolhida pelo proprietário é a **Beta em aparência de fibra de carbo
 1. `Especificacao_Produto_Macropad_Biometrico_Gravador_2026-11-21.md`: decisões expressas do proprietário e pendências.
 2. `beta_blender/LEIA-ME.md` e `Beta_v1.0.1.blend`: linguagem visual escolhida, materiais refinados e galeria RGB; a 1.0.0 preserva vistas técnicas de geometria.
 3. `development/README.md`, `development/VALIDATION.md` e `docs/STATUS.md`: implementação e verificações atuais.
+3a. `docs/engineering/Rev_A/`: Caderno de Engenharia A3 em PDF, gerador, fontes, prévias, mapa de fontes e pendências. É uma linha de base, não liberação de produção.
 4. `development/hardware/v0.3.0/`: placas KiCad ativas, seis rotas de tecla, pinagem FFC de 24 vias, footprints candidatos e DRCs. `development/hardware/v0.2.0/` preserva esquema da bancada, BOM por bloco e a proposta técnica herdada.
 5. `development/mechanical/v0.1.0/`: peças de prototipagem, cuja espessura exploratória difere do modelo visual.
 6. `development/integration/v0.2.0/`: conjunto STEP com as duas placas KiCad 0.3.0, envelopes de componentes e relatório de choques; `v0.1.0/` preserva o CAD paramétrico e desenhos anteriores.

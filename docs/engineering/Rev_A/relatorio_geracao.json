@@ -1,0 +1,254 @@
+{
+  "document": "CorePad - Caderno de Engenharia - Rev. A",
+  "date": "22/11/2026",
+  "pages": 65,
+  "page_size_mm": [
+    420,
+    297
+  ],
+  "pdf_bytes": 21029599,
+  "sections": {
+    "VISÃO GERAL DO SISTEMA": {
+      "start": 5,
+      "end": 9
+    },
+    "REQUISITOS E ESPECIFICAÇÕES": {
+      "start": 10,
+      "end": 15
+    },
+    "ELETRÔNICA": {
+      "start": 16,
+      "end": 25
+    },
+    "MECÂNICA": {
+      "start": 26,
+      "end": 31
+    },
+    "INSTRUÇÕES DE MONTAGEM": {
+      "start": 32,
+      "end": 35
+    },
+    "FIRMWARE": {
+      "start": 36,
+      "end": 39
+    },
+    "SOFTWARE E APP": {
+      "start": 40,
+      "end": 41
+    },
+    "MANUAL DE OPERAÇÃO": {
+      "start": 42,
+      "end": 43
+    },
+    "TESTE DE PRODUÇÃO E QUALIDADE": {
+      "start": 44,
+      "end": 46
+    },
+    "CONFORMIDADE E SEGURANÇA": {
+      "start": 47,
+      "end": 48
+    },
+    "GESTÃO DE PRODUTO": {
+      "start": 49,
+      "end": 53
+    },
+    "EMBALAGEM E LOGÍSTICA": {
+      "start": 54,
+      "end": 55
+    },
+    "ANEXOS E RASTREABILIDADE": {
+      "start": 56,
+      "end": 65
+    }
+  },
+  "font_sizes_pt": {
+    "cover": 70.9,
+    "cover_sub": 20.4,
+    "divider_num": 79.4,
+    "divider_title": 51.0,
+    "divider_body": 23.0,
+    "title": 32.6,
+    "title_long": 28.3,
+    "title_two": 28.9,
+    "right_label": 19.6,
+    "subtitle": 19.8,
+    "body": 19.8,
+    "note": 30.6,
+    "table_head": 16.6,
+    "table_cell": 18.3,
+    "kv": 18.4,
+    "diagram": 17.4,
+    "diagram_head": 16.2,
+    "code": 18.1,
+    "caption": 16.7,
+    "footer": 19.6,
+    "source": 16.4,
+    "ruler": 16.2
+  },
+  "figures": 9,
+  "a_definir": [
+    {
+      "id": "D-001",
+      "item": "Situação da marca CorePad no INPI",
+      "responsavel": "Gestão de produto",
+      "proximo_passo": "Consultar processo de marca e registrar número, classe e parecer."
+    },
+    {
+      "id": "D-002",
+      "item": "Prioridades, HEX, brilho e temporização dos estados",
+      "responsavel": "Produto + firmware",
+      "proximo_passo": "Aprovar tabela de estados e verificar no protótipo."
+    },
+    {
+      "id": "D-003",
+      "item": "Tolerâncias dimensionais e ambientais",
+      "responsavel": "Mecânica + qualidade",
+      "proximo_passo": "Definir critérios a partir de processo, fornecedores e ensaios."
+    },
+    {
+      "id": "D-004",
+      "item": "Critérios de acessibilidade e efeitos RGB",
+      "responsavel": "Produto + qualidade",
+      "proximo_passo": "Definir limites de animação, contraste e ensaio com usuários."
+    },
+    {
+      "id": "D-005",
+      "item": "Cabo FFC, orientação e corrente admissível",
+      "responsavel": "Hardware + mecânica",
+      "proximo_passo": "Escolher MPN de cabo e validar amostra na montagem real."
+    },
+    {
+      "id": "D-006",
+      "item": "Pinmap completo do STM32U5A5",
+      "responsavel": "Hardware + firmware",
+      "proximo_passo": "Fechar tabela de funções alternativas e revisar colisões de periféricos."
+    },
+    {
+      "id": "D-007",
+      "item": "Orçamento medido de energia e bateria final",
+      "responsavel": "Hardware + teste",
+      "proximo_passo": "Medir placa de bancada por estado e dimensionar célula/reguladores."
+    },
+    {
+      "id": "D-008",
+      "item": "BOM completa, second source, estoque e preços datados",
+      "responsavel": "Compras + hardware",
+      "proximo_passo": "Cotação por lote após esquemas e MPNs aprovados."
+    },
+    {
+      "id": "D-009",
+      "item": "Material, processo e desenhos liberados de todas as peças",
+      "responsavel": "Mecânica + manufatura",
+      "proximo_passo": "Projetar peças com componentes finais e gerar desenhos por peça."
+    },
+    {
+      "id": "D-010",
+      "item": "Instruções ilustradas, ferramentas, torque e poka-yoke",
+      "responsavel": "Manufatura + mecânica",
+      "proximo_passo": "Fechar peças/PCBA e executar piloto de montagem com medições."
+    },
+    {
+      "id": "D-011",
+      "item": "Firmware inicializável e procedimento de gravação",
+      "responsavel": "Firmware + segurança",
+      "proximo_passo": "Criar projeto de placa, bootloader, imagem e ensaio em protótipo."
+    },
+    {
+      "id": "D-012",
+      "item": "Distribuição, diagnóstico e privacidade do app",
+      "responsavel": "Software + produto",
+      "proximo_passo": "Definir sistemas-alvo, política de dados e instaladores."
+    },
+    {
+      "id": "D-013",
+      "item": "Manual final de usuário e manutenção",
+      "responsavel": "Produto + suporte",
+      "proximo_passo": "Validar protótipo e redigir instruções ensaiadas com usuários."
+    },
+    {
+      "id": "D-014",
+      "item": "Fixture, AQL, limites de teste e rastreabilidade",
+      "responsavel": "Qualidade + manufatura",
+      "proximo_passo": "Criar plano de controle após EVT e executar piloto PVT."
+    },
+    {
+      "id": "D-015",
+      "item": "Mercados e plano normativo aplicável",
+      "responsavel": "Produto + qualidade",
+      "proximo_passo": "Selecionar regiões de venda e contratar avaliação normativa."
+    },
+    {
+      "id": "D-016",
+      "item": "Preço, custo por lote e cadeia de suprimentos",
+      "responsavel": "Gestão de produto + compras",
+      "proximo_passo": "Solicitar cotações datadas após BOM/mercados fechados."
+    },
+    {
+      "id": "D-017",
+      "item": "Embalagem, etiqueta e logística",
+      "responsavel": "Produto + manufatura",
+      "proximo_passo": "Definir conteúdo e mercados após desenho fechado."
+    },
+    {
+      "id": "D-018",
+      "item": "VID:PID, descritores USB e classes efetivas",
+      "responsavel": "Firmware + produto",
+      "proximo_passo": "Definir identidade USB e provar composição em hardware."
+    },
+    {
+      "id": "D-019",
+      "item": "Mapa de memória não volátil e option bytes",
+      "responsavel": "Firmware + segurança",
+      "proximo_passo": "Projetar armazenamento, boot e provisionamento; ensaiar recuperação."
+    },
+    {
+      "id": "D-020",
+      "item": "Timeouts, retries e códigos de erro do CPD1 físico",
+      "responsavel": "Firmware + software",
+      "proximo_passo": "Implementar transporte USB e testar falhas de comunicação."
+    },
+    {
+      "id": "D-021",
+      "item": "Formato final do arquivo de gravação e temporização SD/áudio",
+      "responsavel": "Firmware + áudio",
+      "proximo_passo": "Ensaiar codec e cartão com gravação longa recuperável."
+    },
+    {
+      "id": "D-022",
+      "item": "Brilho, efeitos e consumo da faixa RGB",
+      "responsavel": "Hardware + produto",
+      "proximo_passo": "Selecionar LEDs/driver e medir cor, corrente e uniformidade."
+    },
+    {
+      "id": "D-023",
+      "item": "Temperatura, vibração, grau de proteção e vida útil",
+      "responsavel": "Qualidade + mecânica",
+      "proximo_passo": "Definir ambiente de uso e ensaios DVT com limites."
+    },
+    {
+      "id": "D-024",
+      "item": "Stack-up PCB, impedâncias, Gerber/furação e painelização",
+      "responsavel": "Hardware + fabricante PCB",
+      "proximo_passo": "Fechar esquema/layout e revisar pacote com fornecedor."
+    },
+    {
+      "id": "D-025",
+      "item": "Pontos de teste e circuito de programação",
+      "responsavel": "Hardware + manufatura",
+      "proximo_passo": "Adicionar acesso de fixture após pinmap e revisar DFT."
+    },
+    {
+      "id": "D-026",
+      "item": "Alternativas qualificadas e disponibilidade dos críticos",
+      "responsavel": "Compras + hardware",
+      "proximo_passo": "Cotação datada, amostras e revalidação elétrica/mecânica."
+    },
+    {
+      "id": "D-027",
+      "item": "Geometria e segurança do módulo biométrico final",
+      "responsavel": "Segurança + mecânica",
+      "proximo_passo": "Escolher sensor autenticado e validar encaixe e ameaça."
+    }
+  ],
+  "release": "BLOQUEADA: estudo de engenharia sem esquemas e saídas de fabricação completos."
+}

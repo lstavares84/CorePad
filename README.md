@@ -2,6 +2,8 @@
 
 Macropad USB-C com **9 teclas em 3 × 3**, biometria, controle de áudio e gravação de reuniões. A linha escolhida para desenvolvimento é a **Beta**, com acabamento em aparência de fibra de carbono e faixa RGB configurável exclusivamente na base.
 
+O [Caderno de Engenharia Rev. A em PDF](docs/engineering/Rev_A/CorePad_Caderno_de_Engenharia_Rev_A.pdf) consolida requisitos, eletrônica, mecânica, firmware, software, qualidade, riscos e pendências em 65 lâminas A3. Consulte o [índice e instruções de reprodução](docs/engineering/Rev_A/README.md). O caderno é uma linha de base de engenharia; fabricação permanece bloqueada pelos itens “A DEFINIR”.
+
 ![CorePad Beta Carbon 1.0.1 — render refinado](beta_blender/Beta_v1.0.1_RGB_verde.png)
 
 ## RGB — cinco cores

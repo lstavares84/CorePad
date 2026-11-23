@@ -1,0 +1,104 @@
+{
+  "revision": "A",
+  "date": "22/11/2026",
+  "sources": {
+    "S01": {
+      "path": "Especificacao_Produto_Macropad_Biometrico_Gravador_2026-11-21.md",
+      "sha256": "2285e27020dea1c5cee4b7730c9232cd9552981ddfdfa4f2011af9ce5e5e6818"
+    },
+    "S02": {
+      "path": "README.md",
+      "sha256": "e45e358f9037cc5cc4cb8d26171e3c921879db6f6f544e94b2f81826149a9c78"
+    },
+    "S03": {
+      "path": "development/hardware/v0.3.0/README.md",
+      "sha256": "3abb28d94a7a962a7fd84cec68b1542019287cd25bf30df26399d5289383a7bf"
+    },
+    "S04": {
+      "path": "development/hardware/v0.3.0/BOM_DELTA.md",
+      "sha256": "40c8b25f433cad5fda74f3f790a0451efb3f7caee69306d5cdea91a5da8430f1"
+    },
+    "S05": {
+      "path": "development/hardware/v0.3.0/interconnect_24.json",
+      "sha256": "1f1ecd23d1ffff8dc3781b22f80f63bec3565c2d923dea5c66b1128ed66545d4"
+    },
+    "S06": {
+      "path": "development/hardware/v0.3.0/ui_drc.txt",
+      "sha256": "1a9adec362918ba2a43e855605a4c87f896d977bf1494c64c27fbd8a872b0b2f"
+    },
+    "S07": {
+      "path": "development/hardware/v0.3.0/main_drc.txt",
+      "sha256": "e61987530a98e87143a380ab6703c79678d9c29bb0884573264c88d461210234"
+    },
+    "S08": {
+      "path": "development/integration/v0.2.0/fit_report.json",
+      "sha256": "2094135d31cd0cbba7b618684d57d585a5fe1eff364c9465b3751345c140309f"
+    },
+    "S09": {
+      "path": "development/integration/v0.2.0/assembly_manifest.json",
+      "sha256": "77f5b33fba4f249ab2a7fd4397a60fd7093fc68fa3729a3e18a5e312bb4a2357"
+    },
+    "S10": {
+      "path": "development/firmware/corepad.h",
+      "sha256": "b961f8fd1360d8f38367266cba91f0363894d502b9dd980c151664a3a0ca91bd"
+    },
+    "S11": {
+      "path": "development/firmware/corepad.c",
+      "sha256": "77e67c56dcb07e793865b3cc2df0fe26b30ac20f0339e0c92cbc5879138e4861"
+    },
+    "S12": {
+      "path": "development/software/PROTOCOL.md",
+      "sha256": "fa9a541fc1956cff0ba624a76afde990bfce6e1f3b9dc3563c8e2b247724c45d"
+    },
+    "S13": {
+      "path": "development/software/wire_protocol.py",
+      "sha256": "a0ea913eecda73a0879ca38f5e76d05603e5625fd0912f7b2115019617a7fd8b"
+    },
+    "S14": {
+      "path": "development/software/configurator.py",
+      "sha256": "045a0666b91c9166a711a0e33c655bf00e762f4a378cd1414af25f1d5bd454d2"
+    },
+    "S15": {
+      "path": "development/VALIDATION.md",
+      "sha256": "4ba0a686e38babd0250c45749f59bb5d5c613a4a6117b5806652e983c1f0e75e"
+    },
+    "S16": {
+      "path": "docs/ROADMAP.md",
+      "sha256": "f6e234deb5822a3db7a2f5b4be86560bea0259663fe94826dcd94703191ffab5"
+    },
+    "S17": {
+      "path": "development/hardware/v0.2.0/BOM.md",
+      "sha256": "9bd8a54c8a6872b5996a5401a5409b2fb76c948e9798249a47e6b27fe9f64c43"
+    },
+    "S18": {
+      "path": "development/integration/v0.1.0/LIBERACAO_MANUFATURA.md",
+      "sha256": "a4b3ed7af257490e11222875a7d6d9f46633f5dbf1a3e5da42fff6d104ef4558"
+    },
+    "S19": {
+      "path": "development/integration/v0.2.0/README.md",
+      "sha256": "e2559ba0bb3a6535d0c36a614bdb2d67a88f1e52e51c471a9f399ec36f9baddf"
+    },
+    "S20": {
+      "path": "CLAUDE.md",
+      "sha256": "7ba0db0611196535ef58712e57aef14940becc83bdfafd8c6b9877563df82558"
+    },
+    "S21": {
+      "path": "docs/engineering/Rev_A/prompt_origem.txt",
+      "sha256": "a8d30800ac45f37a963f64b860d5dae4b9fa0aa3bab9f995b41025b72483d1d9"
+    }
+  },
+  "figures": {
+    "cover": "beta_blender/Beta_v1.0.1_RGB_verde.png",
+    "colors_orange": "beta_blender/Beta_v1.0.1_RGB_laranja.png",
+    "colors_blue": "beta_blender/Beta_v1.0.1_RGB_azul.png",
+    "ui": "development/hardware/v0.3.0/CorePad_UI_trilhas.png",
+    "main": "development/hardware/v0.3.0/CorePad_Main_componentes.png",
+    "assembly": "development/integration/v0.2.0/montagem_PCB_match_v0.2.0.png",
+    "base": "docs/images/base_interior.png",
+    "lid": "docs/images/tampa_tecnica.png",
+    "exploded": "docs/images/pecas_explodidas.png",
+    "product_top": "beta_blender/Beta_v1.0.0_vista_superior.png",
+    "product_side": "beta_blender/Beta_v1.0.0_lateral_microSD_P2.png",
+    "product_rear": "beta_blender/Beta_v1.0.0_traseira_USB-C.png"
+  }
+}

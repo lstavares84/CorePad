@@ -2,4 +2,5 @@
 *.step binary
 *.stl binary
 *.blend binary
+*.pdf binary
 docs/images/pcb_ui_placement.svg -diff
