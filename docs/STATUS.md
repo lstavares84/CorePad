@@ -2,6 +2,8 @@
 
 Atualizado em 22/11/2026.
 
+O `docs/engineering/Rev_A/` contém um Caderno de Engenharia A3 com fontes verificadas, 65 páginas, prévias renderizadas e registro de pendências. Seu estado é **estudo de engenharia**; não há pacote liberado de fabricação, montagem ou teste de produção.
+
 Repositório organizado em torno da Beta carbon. A linha Alpha, conceitos descartados e geradores duplicados foram movidos para `.old/`. O relatório de arquitetura ainda útil foi preservado no pacote eletrônico ativo. O README contém vistas do produto, renders KiCad e vistas das peças plásticas, com suas fontes e limitações de estágio.
 
 A revisão visual 1.0.1 refina a trama de carbono, resina, texturas e luz de estúdio. A galeria compara RGB laranja, amarelo, verde, vermelho e azul na mesma câmera, em 2000 × 1700 pixels. A 1.0.0 permanece como fonte das vistas geométricas anteriores.
